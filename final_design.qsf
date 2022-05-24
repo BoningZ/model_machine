@@ -1,0 +1,122 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		final_design_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C8Q208C7
+set_global_assignment -name TOP_LEVEL_ENTITY final_design
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "01:23:04  MAY 23, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name SEARCH_PATH 333
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE final_design.bdf
+set_global_assignment -name BDF_FILE 333/reg8.bdf
+set_global_assignment -name BDF_FILE BUSed/alu_bus.bdf
+set_global_assignment -name BDF_FILE BUSed/reg8_bus.bdf
+set_global_assignment -name BDF_FILE 333/uPC.bdf
+set_global_assignment -name BDF_FILE 333/my_start.bdf
+set_global_assignment -name BDF_FILE 333/alu.bdf
+set_global_assignment -name BDF_FILE "333/3-8.bdf"
+set_global_assignment -name BDF_FILE "333/2-4.bdf"
+set_global_assignment -name BDF_FILE BUSed/counter_bus.bdf
+set_global_assignment -name BDF_FILE 333/3_state_1_gate.bdf
+set_global_assignment -name BDF_FILE BUSed/3_state_1_gate_bus.bdf
+set_global_assignment -name BDF_FILE 333/3_state_2_gate.bdf
+set_global_assignment -name BDF_FILE BUSed/3_state_2_gate_bus.bdf
+set_global_assignment -name BDF_FILE 333/selector2.bdf
+set_global_assignment -name BDF_FILE BUSed/selector2_bus.bdf
+set_global_assignment -name BDF_FILE BUSed/selector4_bus.bdf
+set_global_assignment -name BDF_FILE BUSed/selector_halfa.bdf
+set_global_assignment -name BDF_FILE "BUSed/3-8_bus.bdf"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_global_assignment -name MISC_FILE "D:/quartus/quartus/final_design/final_design.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_168 -to AdRAM_0
+set_location_assignment PIN_169 -to AdRAM_1
+set_location_assignment PIN_170 -to AdRAM_2
+set_location_assignment PIN_171 -to AdRAM_3
+set_location_assignment PIN_173 -to AdRAM_4
+set_location_assignment PIN_175 -to AdRAM_5
+set_location_assignment PIN_176 -to AdRAM_6
+set_location_assignment PIN_179 -to AdRAM_7
+set_location_assignment PIN_180 -to AdROM0
+set_location_assignment PIN_181 -to AdROM1
+set_location_assignment PIN_182 -to AdROM2
+set_location_assignment PIN_185 -to AdROM3
+set_location_assignment PIN_187 -to AdROM4
+set_location_assignment PIN_188 -to AdROM5
+set_location_assignment PIN_189 -to AdROM6
+set_location_assignment PIN_191 -to AdROM7
+set_location_assignment PIN_77 -to CLR
+set_location_assignment PIN_131 -to CONTINUOUS_PULSE
+set_location_assignment PIN_61 -to CPuIR
+set_location_assignment PIN_192 -to DtRAM_0
+set_location_assignment PIN_193 -to DtRAM_1
+set_location_assignment PIN_195 -to DtRAM_2
+set_location_assignment PIN_197 -to DtRAM_3
+set_location_assignment PIN_198 -to DtRAM_4
+set_location_assignment PIN_199 -to DtRAM_5
+set_location_assignment PIN_200 -to DtRAM_6
+set_location_assignment PIN_201 -to DtRAM_7
+set_location_assignment PIN_63 -to RAM_READ_SIG
+set_location_assignment PIN_64 -to RAM_WRITE_SIG
+set_location_assignment PIN_132 -to START_CP
+set_location_assignment PIN_95 -to uIR4_RAM_WRITE
+set_location_assignment PIN_96 -to uIR5_RAM_READ
+set_location_assignment PIN_101 -to uIR8_C0
+set_location_assignment PIN_112 -to uIR16
+set_location_assignment PIN_113 -to uIR17
+set_location_assignment PIN_114 -to uIR18
+set_location_assignment PIN_115 -to uIR19
+set_location_assignment PIN_116 -to uIR20
+set_location_assignment PIN_117 -to uIR21
+set_location_assignment PIN_118 -to uIR22
+set_location_assignment PIN_127 -to uIR23
+set_location_assignment PIN_89 -to uIR_0
+set_location_assignment PIN_90 -to uIR_1
+set_location_assignment PIN_92 -to uIR_2
+set_location_assignment PIN_94 -to uIR_3_HALT
+set_location_assignment PIN_97 -to uIR_6_expR
+set_location_assignment PIN_102 -to uIR_9
+set_location_assignment PIN_103 -to uIR_10
+set_location_assignment PIN_104 -to uIR_11
+set_location_assignment PIN_105 -to uIR_12
+set_location_assignment PIN_106 -to uIR_13
+set_location_assignment PIN_108 -to uIR_14
+set_location_assignment PIN_110 -to uIR_15
+set_location_assignment PIN_60 -to uRD
+set_location_assignment PIN_33 -to C_extra
+set_location_assignment PIN_31 -to N_negative
+set_location_assignment PIN_30 -to V_overflow
+set_location_assignment PIN_15 -to Z_zero

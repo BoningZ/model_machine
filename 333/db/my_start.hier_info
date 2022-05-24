@@ -1,0 +1,9 @@
+|my_start
+CP <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+HALT => inst2.IN0
+IMPULSE => inst3.IN1
+CLR => inst.ACLR
+CLR => inst.PRESET
+START => inst.CLK
+
+
