@@ -120,3 +120,14 @@ set_location_assignment PIN_33 -to C_extra
 set_location_assignment PIN_31 -to N_negative
 set_location_assignment PIN_30 -to V_overflow
 set_location_assignment PIN_15 -to Z_zero
+set_global_assignment -name MISC_FILE "E:/¼Æ×é¿ÎÉè/final_design/final_design.dpf"
+set_location_assignment PIN_142 -to TEST0
+set_location_assignment PIN_143 -to TEST1
+set_location_assignment PIN_144 -to TEST2
+set_location_assignment PIN_145 -to TEST3
+set_location_assignment PIN_146 -to TEST4
+set_location_assignment PIN_147 -to TEST5
+set_location_assignment PIN_149 -to TEST6
+set_location_assignment PIN_150 -to TEST7
+set_location_assignment PIN_151 -to XINHAO
+set_location_assignment PIN_152 -to XINHAO27

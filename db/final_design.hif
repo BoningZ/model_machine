@@ -23,26 +23,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-final_design
-# storage
-db|final_design.(0).cnf
-db|final_design.(0).cnf
-# case_insensitive
-# source_file
-final_design.bdf
-db43ef8c25d5f2a7816822536ce261
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 reg8
 # storage
 db|final_design.(1).cnf
@@ -66,6 +46,7 @@ reg8_bus:R2|reg8:inst1
 reg8_bus:R3|reg8:inst1
 reg8_bus:MDR|reg8:inst1
 reg8_bus:MAR|reg8:inst1
+reg8_bus:inst9|reg8:inst1
 }
 # macro_sequence
 
@@ -91,87 +72,6 @@ my_start:inst
 
 # end
 # entity
-alu_bus
-# storage
-db|final_design.(3).cnf
-db|final_design.(3).cnf
-# case_insensitive
-# source_file
-BUSed|alu_bus.bdf
-38958b8118bd9ab6df9825964240b23
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-alu_bus:inst8
-}
-# macro_sequence
-
-# end
-# entity
-alu
-# storage
-db|final_design.(4).cnf
-db|final_design.(4).cnf
-# case_insensitive
-# source_file
-333|alu.bdf
-67416ce4e8b5e7b617b1ad8835db6
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-alu_bus:inst8|alu:inst
-}
-# macro_sequence
-
-# end
-# entity
-74181
-# storage
-db|final_design.(5).cnf
-db|final_design.(5).cnf
-# case_insensitive
-# source_file
-..|libraries|others|maxplus2|74181.bdf
-5a7a42864d75db2f39a1f2da31e3e53
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-alu_bus:inst8|alu:inst|74181:inst
-alu_bus:inst8|alu:inst|74181:inst3
-}
-# macro_sequence
-
-# end
-# entity
-74182
-# storage
-db|final_design.(6).cnf
-db|final_design.(6).cnf
-# case_insensitive
-# source_file
-..|libraries|others|maxplus2|74182.bdf
-7e848f93ad7899d68043667228e561f6
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-alu_bus:inst8|alu:inst|74182:inst2
-}
-# macro_sequence
-
-# end
-# entity
 3_state_1_gate_bus
 # storage
 db|final_design.(7).cnf
@@ -190,6 +90,8 @@ AUTO
 3_state_1_gate_bus:inst60
 3_state_1_gate_bus:A
 3_state_1_gate_bus:inst62
+3_state_1_gate_bus:inst93
+3_state_1_gate_bus:inst94
 3_state_1_gate_bus:inst63
 3_state_1_gate_bus:B
 3_state_1_gate_bus:inst23
@@ -218,6 +120,8 @@ AUTO
 3_state_1_gate_bus:inst60|3_state_1_gate:inst
 3_state_1_gate_bus:A|3_state_1_gate:inst
 3_state_1_gate_bus:inst62|3_state_1_gate:inst
+3_state_1_gate_bus:inst93|3_state_1_gate:inst
+3_state_1_gate_bus:inst94|3_state_1_gate:inst
 3_state_1_gate_bus:inst63|3_state_1_gate:inst
 3_state_1_gate_bus:B|3_state_1_gate:inst
 3_state_1_gate_bus:inst23|3_state_1_gate:inst
@@ -244,36 +148,10 @@ AUTO
 # hierarchies {
 2-4:selA
 2-4:inst6
+2-4:inst88
 2-4:selB
 2-4:inst48
 2-4:inst7
-}
-# macro_sequence
-
-# end
-# entity
-reg8_bus
-# storage
-db|final_design.(10).cnf
-db|final_design.(10).cnf
-# case_insensitive
-# source_file
-BUSed|reg8_bus.bdf
-3b183d63646e4e787bab7c291090b88f
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-reg8_bus:PC
-reg8_bus:I_R
-reg8_bus:R0
-reg8_bus:R1
-reg8_bus:R2
-reg8_bus:R3
-reg8_bus:MDR
-reg8_bus:MAR
 }
 # macro_sequence
 
@@ -315,27 +193,6 @@ AUTO
 # hierarchies {
 3-8_bus:inst72|3-8:inst
 3-8:inst78
-}
-# macro_sequence
-
-# end
-# entity
-74138
-# storage
-db|final_design.(13).cnf
-db|final_design.(13).cnf
-# case_insensitive
-# source_file
-..|libraries|others|maxplus2|74138.bdf
-6cadbea2e3f85766eb8e4e262292077
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-3-8_bus:inst72|3-8:inst|74138:inst
-3-8:inst78|74138:inst
 }
 # macro_sequence
 
@@ -493,13 +350,95 @@ counter_bus:uPC|uPC:inst
 
 # end
 # entity
+selector_halfa
+# storage
+db|final_design.(24).cnf
+db|final_design.(24).cnf
+# case_insensitive
+# source_file
+BUSed|selector_halfa.bdf
+1de81224d5fc575ef52d34d5c2289f46
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+selector_halfa:inst46
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|final_design.(5).cnf
+db|final_design.(5).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+alu_bus:inst8|alu:inst|74181:inst
+alu_bus:inst8|alu:inst|74181:inst3
+}
+# macro_sequence
+
+# end
+# entity
+74182
+# storage
+db|final_design.(6).cnf
+db|final_design.(6).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74182.bdf
+7e848f93ad7899d68043667228e561f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+alu_bus:inst8|alu:inst|74182:inst2
+}
+# macro_sequence
+
+# end
+# entity
+74138
+# storage
+db|final_design.(13).cnf
+db|final_design.(13).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|others|maxplus2|74138.bdf
+6cadbea2e3f85766eb8e4e262292077
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+3-8_bus:inst72|3-8:inst|74138:inst
+3-8:inst78|74138:inst
+}
+# macro_sequence
+
+# end
+# entity
 74161
 # storage
 db|final_design.(21).cnf
 db|final_design.(21).cnf
 # case_insensitive
 # source_file
-..|libraries|others|maxplus2|74161.tdf
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -569,7 +508,7 @@ ENP
 2
 }
 # include_file {
-..|libraries|megafunctions|aglobal.inc
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -585,7 +524,7 @@ db|final_design.(22).cnf
 db|final_design.(22).cnf
 # case_insensitive
 # source_file
-..|libraries|others|maxplus2|f74161.bdf
+c:|altera|81|quartus|libraries|others|maxplus2|f74161.bdf
 408d3815988dee8ef0f04d17774959
 26
 # internal_option {
@@ -606,7 +545,7 @@ db|final_design.(23).cnf
 db|final_design.(23).cnf
 # case_insensitive
 # source_file
-..|libraries|others|maxplus2|74161.tdf
+c:|altera|81|quartus|libraries|others|maxplus2|74161.tdf
 8ae87de328fa01839f5a524a1a9ba
 7
 # user_parameter {
@@ -673,7 +612,7 @@ A
 3
 }
 # include_file {
-..|libraries|megafunctions|aglobal.inc
+c:|altera|81|quartus|libraries|megafunctions|aglobal.inc
 ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
@@ -683,21 +622,89 @@ counter_bus:uPC|uPC:inst|74161:inst1
 
 # end
 # entity
-selector_halfa
+reg8_bus
 # storage
-db|final_design.(24).cnf
-db|final_design.(24).cnf
+db|final_design.(10).cnf
+db|final_design.(10).cnf
 # case_insensitive
 # source_file
-BUSed|selector_halfa.bdf
-1de81224d5fc575ef52d34d5c2289f46
+BUSed|reg8_bus.bdf
+e31f874c6cf6ef3e7581ce1e3ed57
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-selector_halfa:inst46
+reg8_bus:PC
+reg8_bus:I_R
+reg8_bus:R0
+reg8_bus:R1
+reg8_bus:R2
+reg8_bus:R3
+reg8_bus:MDR
+reg8_bus:MAR
+reg8_bus:inst9
+}
+# macro_sequence
+
+# end
+# entity
+alu_bus
+# storage
+db|final_design.(3).cnf
+db|final_design.(3).cnf
+# case_insensitive
+# source_file
+BUSed|alu_bus.bdf
+f7164e66461536a28a54cd42924b59fa
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+alu_bus:inst8
+}
+# macro_sequence
+
+# end
+# entity
+alu
+# storage
+db|final_design.(4).cnf
+db|final_design.(4).cnf
+# case_insensitive
+# source_file
+333|alu.bdf
+69d3827aa9a95dda74b5dd6cde5e645
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+alu_bus:inst8|alu:inst
+}
+# macro_sequence
+
+# end
+# entity
+final_design
+# storage
+db|final_design.(0).cnf
+db|final_design.(0).cnf
+# case_insensitive
+# source_file
+final_design.bdf
+e3310b955e1569f13bb2eb16a3dfff7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

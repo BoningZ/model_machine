@@ -1,5 +1,5 @@
 Fitter report for final_design
-Wed May 25 02:09:02 2022
+Thu May 26 21:15:11 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -65,18 +65,18 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +------------------------------------+-----------------------------------------+
-; Fitter Status                      ; Successful - Wed May 25 02:09:02 2022   ;
+; Fitter Status                      ; Successful - Thu May 26 21:15:11 2022   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; final_design                            ;
 ; Top-level Entity Name              ; final_design                            ;
 ; Family                             ; Cyclone II                              ;
 ; Device                             ; EP2C8Q208C7                             ;
 ; Timing Models                      ; Final                                   ;
-; Total logic elements               ; 158 / 8,256 ( 2 % )                     ;
-;     Total combinational functions  ; 122 / 8,256 ( 1 % )                     ;
-;     Dedicated logic registers      ; 77 / 8,256 ( < 1 % )                    ;
-; Total registers                    ; 77                                      ;
-; Total pins                         ; 58 / 138 ( 42 % )                       ;
+; Total logic elements               ; 149 / 8,256 ( 2 % )                     ;
+;     Total combinational functions  ; 123 / 8,256 ( 1 % )                     ;
+;     Dedicated logic registers      ; 85 / 8,256 ( 1 % )                      ;
+; Total registers                    ; 85                                      ;
+; Total pins                         ; 68 / 138 ( 49 % )                       ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0 / 165,888 ( 0 % )                     ;
 ; Embedded Multiplier 9-bit elements ; 0 / 36 ( 0 % )                          ;
@@ -141,8 +141,8 @@ applicable agreement for further details.
 ; Type                    ; Value              ;
 +-------------------------+--------------------+
 ; Placement               ;                    ;
-;     -- Requested        ; 0 / 256 ( 0.00 % ) ;
-;     -- Achieved         ; 0 / 256 ( 0.00 % ) ;
+;     -- Requested        ; 0 / 275 ( 0.00 % ) ;
+;     -- Achieved         ; 0 / 275 ( 0.00 % ) ;
 ;                         ;                    ;
 ; Routing (by Connection) ;                    ;
 ;     -- Requested        ; 0 / 0 ( 0.00 % )   ;
@@ -164,14 +164,14 @@ applicable agreement for further details.
 +----------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +----------------+---------+-------------------+-------------------------+-------------------+
-; Top            ; 256     ; 0                 ; N/A                     ; Source File       ;
+; Top            ; 275     ; 0                 ; N/A                     ; Source File       ;
 +----------------+---------+-------------------+-------------------------+-------------------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pin.
+The pin-out file can be found in E:/¼Æ×é¿ÎÉè/final_design/final_design.pin.
 
 
 +--------------------------------------------------------------------+
@@ -179,29 +179,29 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 158 / 8,256 ( 2 % )  ;
-;     -- Combinational with no register       ; 81                   ;
-;     -- Register only                        ; 36                   ;
-;     -- Combinational with a register        ; 41                   ;
+; Total logic elements                        ; 149 / 8,256 ( 2 % )  ;
+;     -- Combinational with no register       ; 64                   ;
+;     -- Register only                        ; 26                   ;
+;     -- Combinational with a register        ; 59                   ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 94                   ;
-;     -- 3 input functions                    ; 17                   ;
+;     -- 4 input functions                    ; 81                   ;
+;     -- 3 input functions                    ; 31                   ;
 ;     -- <=2 input functions                  ; 11                   ;
-;     -- Register only                        ; 36                   ;
+;     -- Register only                        ; 26                   ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 122                  ;
+;     -- normal mode                          ; 123                  ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
-; Total registers*                            ; 77 / 8,646 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 77 / 8,256 ( < 1 % ) ;
+; Total registers*                            ; 85 / 8,646 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 85 / 8,256 ( 1 % )   ;
 ;     -- I/O registers                        ; 0 / 390 ( 0 % )      ;
 ;                                             ;                      ;
-; Total LABs:  partially or completely used   ; 13 / 516 ( 3 % )     ;
+; Total LABs:  partially or completely used   ; 18 / 516 ( 3 % )     ;
 ; User inserted logic elements                ; 0                    ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 58 / 138 ( 42 % )    ;
+; I/O pins                                    ; 68 / 138 ( 49 % )    ;
 ;     -- Clock pins                           ; 1 / 4 ( 25 % )       ;
 ; Global signals                              ; 8                    ;
 ; M4Ks                                        ; 0 / 36 ( 0 % )       ;
@@ -213,14 +213,14 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 ; JTAGs                                       ; 0 / 1 ( 0 % )        ;
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )        ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
-; Average interconnect usage (total/H/V)      ; 1% / 1% / 1%         ;
-; Peak interconnect usage (total/H/V)         ; 4% / 3% / 5%         ;
+; Average interconnect usage (total/H/V)      ; 2% / 2% / 1%         ;
+; Peak interconnect usage (total/H/V)         ; 5% / 7% / 4%         ;
 ; Maximum fan-out node                        ; CLR                  ;
 ; Maximum fan-out                             ; 77                   ;
 ; Highest non-global fan-out signal           ; CLR                  ;
 ; Highest non-global fan-out                  ; 77                   ;
-; Total fan-out                               ; 764                  ;
-; Average fan-out                             ; 2.68                 ;
+; Total fan-out                               ; 776                  ;
+; Average fan-out                             ; 2.58                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -232,7 +232,7 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 ; Name             ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; CLR              ; 77    ; 4        ; 18           ; 0            ; 0           ; 77                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; CONTINUOUS_PULSE ; 131   ; 3        ; 34           ; 10           ; 1           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; CONTINUOUS_PULSE ; 131   ; 3        ; 34           ; 10           ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; START_CP         ; 132   ; 3        ; 34           ; 10           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR16            ; 112   ; 3        ; 34           ; 3            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR17            ; 113   ; 3        ; 34           ; 3            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
@@ -242,21 +242,21 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 ; uIR21            ; 117   ; 3        ; 34           ; 5            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR22            ; 118   ; 3        ; 34           ; 7            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR23            ; 127   ; 3        ; 34           ; 9            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR4_RAM_WRITE   ; 95    ; 4        ; 30           ; 0            ; 3           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR5_RAM_READ    ; 96    ; 4        ; 30           ; 0            ; 2           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR4_RAM_WRITE   ; 95    ; 4        ; 30           ; 0            ; 3           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR5_RAM_READ    ; 96    ; 4        ; 30           ; 0            ; 2           ; 10                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR8_C0          ; 101   ; 4        ; 32           ; 0            ; 3           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_0            ; 89    ; 4        ; 28           ; 0            ; 3           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_1            ; 90    ; 4        ; 28           ; 0            ; 2           ; 10                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_10           ; 103   ; 4        ; 32           ; 0            ; 1           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_11           ; 104   ; 4        ; 32           ; 0            ; 0           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_12           ; 105   ; 3        ; 34           ; 1            ; 2           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_0            ; 89    ; 4        ; 28           ; 0            ; 3           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_1            ; 90    ; 4        ; 28           ; 0            ; 2           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_10           ; 103   ; 4        ; 32           ; 0            ; 1           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_11           ; 104   ; 4        ; 32           ; 0            ; 0           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_12           ; 105   ; 3        ; 34           ; 1            ; 2           ; 11                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR_13           ; 106   ; 3        ; 34           ; 1            ; 1           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_14           ; 108   ; 3        ; 34           ; 2            ; 0           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_15           ; 110   ; 3        ; 34           ; 3            ; 2           ; 12                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_2            ; 92    ; 4        ; 28           ; 0            ; 1           ; 6                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_3_HALT       ; 94    ; 4        ; 28           ; 0            ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_14           ; 108   ; 3        ; 34           ; 2            ; 0           ; 3                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_15           ; 110   ; 3        ; 34           ; 3            ; 2           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_2            ; 92    ; 4        ; 28           ; 0            ; 1           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_3_HALT       ; 94    ; 4        ; 28           ; 0            ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 ; uIR_6_expR       ; 97    ; 4        ; 30           ; 0            ; 1           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; uIR_9            ; 102   ; 4        ; 32           ; 0            ; 2           ; 8                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; uIR_9            ; 102   ; 4        ; 32           ; 0            ; 2           ; 5                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------------------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -286,7 +286,17 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 ; N_negative    ; 31    ; 1        ; 0            ; 8            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; RAM_READ_SIG  ; 63    ; 4        ; 3            ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; RAM_WRITE_SIG ; 64    ; 4        ; 5            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST0         ; 142   ; 3        ; 34           ; 12           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST1         ; 143   ; 3        ; 34           ; 13           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST2         ; 144   ; 3        ; 34           ; 13           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST3         ; 145   ; 3        ; 34           ; 14           ; 4           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST4         ; 146   ; 3        ; 34           ; 15           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST5         ; 147   ; 3        ; 34           ; 15           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST6         ; 149   ; 3        ; 34           ; 16           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; TEST7         ; 150   ; 3        ; 34           ; 16           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; V_overflow    ; 30    ; 1        ; 0            ; 8            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; XINHAO        ; 151   ; 3        ; 34           ; 17           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
+; XINHAO27      ; 152   ; 3        ; 34           ; 17           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; Z_zero        ; 15    ; 1        ; 0            ; 14           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 ; uRD           ; 60    ; 4        ; 3            ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ;
 +---------------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+
@@ -315,7 +325,7 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 +----------+------------------+---------------+--------------+
 ; 1        ; 6 / 32 ( 19 % )  ; 3.3V          ; --           ;
 ; 2        ; 24 / 35 ( 69 % ) ; 3.3V          ; --           ;
-; 3        ; 14 / 35 ( 40 % ) ; 3.3V          ; --           ;
+; 3        ; 24 / 35 ( 69 % ) ; 3.3V          ; --           ;
 ; 4        ; 16 / 36 ( 44 % ) ; 3.3V          ; --           ;
 +----------+------------------+---------------+--------------+
 
@@ -466,17 +476,17 @@ The pin-out file can be found in D:/quartus/quartus/final_design/final_design.pi
 ; 139      ; 136        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; 140      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 141      ; 137        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 142      ; 138        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 143      ; 141        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 144      ; 142        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 145      ; 143        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 146      ; 149        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 147      ; 150        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 142      ; 138        ; 3        ; TEST0                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 143      ; 141        ; 3        ; TEST1                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 144      ; 142        ; 3        ; TEST2                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 145      ; 143        ; 3        ; TEST3                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 146      ; 149        ; 3        ; TEST4                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 147      ; 150        ; 3        ; TEST5                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 148      ;            ; 3        ; VCCIO3                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; 149      ; 151        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 150      ; 152        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 151      ; 153        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; 152      ; 154        ; 3        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; 149      ; 151        ; 3        ; TEST6                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 150      ; 152        ; 3        ; TEST7                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 151      ; 153        ; 3        ; XINHAO                                   ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 152      ; 154        ; 3        ; XINHAO27                                 ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 153      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 154      ;            ;          ; GND_PLL2                                 ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 155      ;            ;          ; VCCD_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -579,46 +589,41 @@ Note: User assignments will override these defaults. The user specified values a
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                           ; Library Name ;
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------+--------------+
-; |final_design                  ; 158 (7)     ; 77 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 58   ; 0            ; 81 (6)       ; 36 (0)            ; 41 (3)           ; |final_design                                                 ; work         ;
-;    |2-4:selB|                  ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |final_design|2-4:selB                                        ; work         ;
-;    |3-8_bus:inst72|            ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |final_design|3-8_bus:inst72                                  ; work         ;
-;       |3-8:inst|               ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (0)        ; 0 (0)             ; 0 (0)            ; |final_design|3-8_bus:inst72|3-8:inst                         ; work         ;
-;          |74138:inst|          ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |final_design|3-8_bus:inst72|3-8:inst|74138:inst              ; work         ;
-;    |3_state_1_gate_bus:B|      ; 18 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (0)       ; 0 (0)             ; 6 (0)            ; |final_design|3_state_1_gate_bus:B                            ; work         ;
-;       |3_state_1_gate:inst|    ; 18 (18)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 6 (6)            ; |final_design|3_state_1_gate_bus:B|3_state_1_gate:inst        ; work         ;
-;    |3_state_1_gate_bus:inst64| ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 2 (0)            ; |final_design|3_state_1_gate_bus:inst64                       ; work         ;
-;       |3_state_1_gate:inst|    ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 2 (2)            ; |final_design|3_state_1_gate_bus:inst64|3_state_1_gate:inst   ; work         ;
-;    |3_state_2_gate_bus:inst29| ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 1 (0)            ; |final_design|3_state_2_gate_bus:inst29                       ; work         ;
-;       |3_state_2_gate:inst|    ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |final_design|3_state_2_gate_bus:inst29|3_state_2_gate:inst   ; work         ;
-;    |alu_bus:inst8|             ; 55 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 18 (0)           ; |final_design|alu_bus:inst8                                   ; work         ;
-;       |alu:inst|               ; 55 (5)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (2)       ; 0 (0)             ; 18 (3)           ; |final_design|alu_bus:inst8|alu:inst                          ; work         ;
-;          |74181:inst3|         ; 22 (22)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 9 (9)            ; |final_design|alu_bus:inst8|alu:inst|74181:inst3              ; work         ;
-;          |74181:inst|          ; 27 (27)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 21 (21)      ; 0 (0)             ; 6 (6)            ; |final_design|alu_bus:inst8|alu:inst|74181:inst               ; work         ;
-;          |74182:inst2|         ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |final_design|alu_bus:inst8|alu:inst|74182:inst2              ; work         ;
-;    |counter_bus:uPC|           ; 21 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (0)       ; 0 (0)             ; 8 (0)            ; |final_design|counter_bus:uPC                                 ; work         ;
-;       |uPC:inst|               ; 21 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (0)       ; 0 (0)             ; 8 (0)            ; |final_design|counter_bus:uPC|uPC:inst                        ; work         ;
-;          |74161:inst1|         ; 14 (0)      ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 4 (0)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst1            ; work         ;
-;             |f74161:sub|       ; 14 (14)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 4 (4)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub ; work         ;
-;          |74161:inst|          ; 7 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 4 (0)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst             ; work         ;
-;             |f74161:sub|       ; 7 (7)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 4 (4)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst|f74161:sub  ; work         ;
-;    |my_start:inst|             ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; |final_design|my_start:inst                                   ; work         ;
+; |final_design                  ; 149 (34)    ; 85 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 68   ; 0            ; 64 (34)      ; 26 (0)            ; 59 (29)          ; |final_design                                                 ; work         ;
+;    |2-4:inst88|                ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; |final_design|2-4:inst88                                      ; work         ;
+;    |3_state_1_gate_bus:inst94| ; 8 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; |final_design|3_state_1_gate_bus:inst94                       ; work         ;
+;       |3_state_1_gate:inst|    ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |final_design|3_state_1_gate_bus:inst94|3_state_1_gate:inst   ; work         ;
+;    |alu_bus:inst8|             ; 27 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (0)       ; 0 (0)             ; 8 (0)            ; |final_design|alu_bus:inst8                                   ; work         ;
+;       |alu:inst|               ; 27 (6)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (2)       ; 0 (0)             ; 8 (4)            ; |final_design|alu_bus:inst8|alu:inst                          ; work         ;
+;          |74181:inst3|         ; 13 (13)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 4 (4)            ; |final_design|alu_bus:inst8|alu:inst|74181:inst3              ; work         ;
+;          |74181:inst|          ; 5 (5)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; |final_design|alu_bus:inst8|alu:inst|74181:inst               ; work         ;
+;          |74182:inst2|         ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |final_design|alu_bus:inst8|alu:inst|74182:inst2              ; work         ;
+;    |counter_bus:uPC|           ; 22 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 12 (0)           ; |final_design|counter_bus:uPC                                 ; work         ;
+;       |uPC:inst|               ; 22 (0)      ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (0)       ; 0 (0)             ; 12 (0)           ; |final_design|counter_bus:uPC|uPC:inst                        ; work         ;
+;          |74161:inst1|         ; 14 (0)      ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 8 (0)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst1            ; work         ;
+;             |f74161:sub|       ; 14 (14)     ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 8 (8)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub ; work         ;
+;          |74161:inst|          ; 8 (0)       ; 4 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 4 (0)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst             ; work         ;
+;             |f74161:sub|       ; 8 (8)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst|f74161:sub  ; work         ;
+;    |my_start:inst|             ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; |final_design|my_start:inst                                   ; work         ;
 ;    |reg8:SIG|                  ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; |final_design|reg8:SIG                                        ; work         ;
-;    |reg8_bus:I_R|              ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (0)             ; 4 (0)            ; |final_design|reg8_bus:I_R                                    ; work         ;
-;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 4 (4)            ; |final_design|reg8_bus:I_R|reg8:inst1                         ; work         ;
+;    |reg8_bus:I_R|              ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; |final_design|reg8_bus:I_R                                    ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |final_design|reg8_bus:I_R|reg8:inst1                         ; work         ;
 ;    |reg8_bus:MAR|              ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (0)             ; 0 (0)            ; |final_design|reg8_bus:MAR                                    ; work         ;
 ;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 8 (8)             ; 0 (0)            ; |final_design|reg8_bus:MAR|reg8:inst1                         ; work         ;
-;    |reg8_bus:MDR|              ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (0)             ; 1 (0)            ; |final_design|reg8_bus:MDR                                    ; work         ;
-;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (7)             ; 1 (1)            ; |final_design|reg8_bus:MDR|reg8:inst1                         ; work         ;
-;    |reg8_bus:PC|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; |final_design|reg8_bus:PC                                     ; work         ;
-;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |final_design|reg8_bus:PC|reg8:inst1                          ; work         ;
-;    |reg8_bus:R0|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 5 (0)            ; |final_design|reg8_bus:R0                                     ; work         ;
-;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 5 (5)            ; |final_design|reg8_bus:R0|reg8:inst1                          ; work         ;
-;    |reg8_bus:R1|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (0)             ; 2 (0)            ; |final_design|reg8_bus:R1                                     ; work         ;
-;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 6 (6)             ; 2 (2)            ; |final_design|reg8_bus:R1|reg8:inst1                          ; work         ;
+;    |reg8_bus:MDR|              ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; |final_design|reg8_bus:MDR                                    ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (8)            ; |final_design|reg8_bus:MDR|reg8:inst1                         ; work         ;
+;    |reg8_bus:PC|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 7 (0)            ; |final_design|reg8_bus:PC                                     ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 7 (7)            ; |final_design|reg8_bus:PC|reg8:inst1                          ; work         ;
+;    |reg8_bus:R0|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 6 (0)            ; |final_design|reg8_bus:R0                                     ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 6 (6)            ; |final_design|reg8_bus:R0|reg8:inst1                          ; work         ;
+;    |reg8_bus:R1|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (0)             ; 4 (0)            ; |final_design|reg8_bus:R1                                     ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 4 (4)            ; |final_design|reg8_bus:R1|reg8:inst1                          ; work         ;
 ;    |reg8_bus:R2|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (0)             ; 5 (0)            ; |final_design|reg8_bus:R2                                     ; work         ;
 ;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 3 (3)             ; 5 (5)            ; |final_design|reg8_bus:R2|reg8:inst1                          ; work         ;
-;    |reg8_bus:R3|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (0)             ; 3 (0)            ; |final_design|reg8_bus:R3                                     ; work         ;
-;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 5 (5)             ; 3 (3)            ; |final_design|reg8_bus:R3|reg8:inst1                          ; work         ;
+;    |reg8_bus:R3|               ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 7 (0)            ; |final_design|reg8_bus:R3                                     ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 7 (7)            ; |final_design|reg8_bus:R3|reg8:inst1                          ; work         ;
+;    |reg8_bus:inst9|            ; 8 (0)       ; 8 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (0)             ; 1 (0)            ; |final_design|reg8_bus:inst9                                  ; work         ;
+;       |reg8:inst1|             ; 8 (8)       ; 8 (8)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 7 (7)             ; 1 (1)            ; |final_design|reg8_bus:inst9|reg8:inst1                       ; work         ;
 +--------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -636,6 +641,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AdRAM_5          ; Output   ; --            ; --            ; --                    ; --  ;
 ; AdRAM_6          ; Output   ; --            ; --            ; --                    ; --  ;
 ; AdRAM_7          ; Output   ; --            ; --            ; --                    ; --  ;
+; DtRAM_0          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
 ; DtRAM_1          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
 ; DtRAM_2          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
 ; DtRAM_3          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
@@ -643,7 +649,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DtRAM_5          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
 ; DtRAM_6          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
 ; DtRAM_7          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
-; DtRAM_0          ; Bidir    ; 6             ; 6             ; --                    ; --  ;
 ; Z_zero           ; Output   ; --            ; --            ; --                    ; --  ;
 ; C_extra          ; Output   ; --            ; --            ; --                    ; --  ;
 ; N_negative       ; Output   ; --            ; --            ; --                    ; --  ;
@@ -660,20 +665,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RAM_READ_SIG     ; Output   ; --            ; --            ; --                    ; --  ;
 ; uRD              ; Output   ; --            ; --            ; --                    ; --  ;
 ; CPuIR            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST0            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST1            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST2            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST3            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST4            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST5            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST6            ; Output   ; --            ; --            ; --                    ; --  ;
+; TEST7            ; Output   ; --            ; --            ; --                    ; --  ;
+; XINHAO           ; Output   ; --            ; --            ; --                    ; --  ;
+; XINHAO27         ; Output   ; --            ; --            ; --                    ; --  ;
 ; uIR4_RAM_WRITE   ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR5_RAM_READ    ; Input    ; 6             ; 6             ; --                    ; --  ;
-; CONTINUOUS_PULSE ; Input    ; 0             ; 0             ; --                    ; --  ;
-; uIR_3_HALT       ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; uIR_12           ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR_13           ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR_15           ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR_14           ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR8_C0          ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; CLR              ; Input    ; 6             ; 6             ; --                    ; --  ;
-; uIR_1            ; Input    ; 0             ; 6             ; --                    ; --  ;
-; uIR_2            ; Input    ; 0             ; 6             ; --                    ; --  ;
+; uIR_0            ; Input    ; 6             ; 6             ; --                    ; --  ;
+; uIR_2            ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR16            ; Input    ; 6             ; 6             ; --                    ; --  ;
-; uIR_0            ; Input    ; 0             ; 6             ; --                    ; --  ;
+; uIR_1            ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR17            ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR18            ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR19            ; Input    ; 6             ; 6             ; --                    ; --  ;
@@ -681,513 +694,502 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; uIR21            ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR22            ; Input    ; 6             ; 6             ; --                    ; --  ;
 ; uIR23            ; Input    ; 6             ; 6             ; --                    ; --  ;
-; START_CP         ; Input    ; 0             ; 0             ; --                    ; --  ;
+; CONTINUOUS_PULSE ; Input    ; 0             ; 0             ; --                    ; --  ;
+; uIR_3_HALT       ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; uIR_6_expR       ; Input    ; 0             ; 0             ; --                    ; --  ;
-; uIR_9            ; Input    ; 0             ; 0             ; --                    ; --  ;
-; uIR_10           ; Input    ; 0             ; 0             ; --                    ; --  ;
+; START_CP         ; Input    ; 0             ; 0             ; --                    ; --  ;
 ; uIR_11           ; Input    ; 0             ; 0             ; --                    ; --  ;
+; uIR_10           ; Input    ; 0             ; 0             ; --                    ; --  ;
+; uIR_9            ; Input    ; 0             ; 0             ; --                    ; --  ;
 +------------------+----------+---------------+---------------+-----------------------+-----+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                ;
-+-----------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                             ; Pad To Core Index ; Setting ;
-+-----------------------------------------------------------------+-------------------+---------+
-; DtRAM_1                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|44~535                 ; 1                 ; 6       ;
-; DtRAM_2                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|45~535                 ; 1                 ; 6       ;
-; DtRAM_3                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|51~561                 ; 1                 ; 6       ;
-; DtRAM_4                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|43~535                ; 1                 ; 6       ;
-; DtRAM_5                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|44~546                ; 0                 ; 6       ;
-; DtRAM_6                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|45~535                ; 0                 ; 6       ;
-; DtRAM_7                                                         ;                   ;         ;
-;      - 3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17~677 ; 0                 ; 6       ;
-; DtRAM_0                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|43~757                 ; 1                 ; 6       ;
-; uIR4_RAM_WRITE                                                  ;                   ;         ;
-;      - DtRAM_0                                                  ; 1                 ; 6       ;
-;      - DtRAM_1                                                  ; 1                 ; 6       ;
-;      - DtRAM_2                                                  ; 1                 ; 6       ;
-;      - DtRAM_3                                                  ; 1                 ; 6       ;
-;      - DtRAM_4                                                  ; 1                 ; 6       ;
-;      - DtRAM_5                                                  ; 1                 ; 6       ;
-;      - DtRAM_6                                                  ; 1                 ; 6       ;
-;      - DtRAM_7                                                  ; 1                 ; 6       ;
-;      - RAM_WRITE_SIG                                            ; 1                 ; 6       ;
-; uIR5_RAM_READ                                                   ;                   ;         ;
-;      - AdRAM_0                                                  ; 1                 ; 6       ;
-;      - AdRAM_1                                                  ; 1                 ; 6       ;
-;      - AdRAM_2                                                  ; 1                 ; 6       ;
-;      - AdRAM_3                                                  ; 1                 ; 6       ;
-;      - AdRAM_4                                                  ; 1                 ; 6       ;
-;      - AdRAM_5                                                  ; 1                 ; 6       ;
-;      - AdRAM_6                                                  ; 1                 ; 6       ;
-;      - AdRAM_7                                                  ; 1                 ; 6       ;
-;      - 3_state_2_gate_bus:inst29|3_state_2_gate:inst|inst27~74  ; 1                 ; 6       ;
-;      - 3_state_2_gate_bus:inst29|3_state_2_gate:inst|inst27~75  ; 1                 ; 6       ;
-;      - 3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17~676 ; 1                 ; 6       ;
-;      - RAM_READ_SIG                                             ; 1                 ; 6       ;
-; CONTINUOUS_PULSE                                                ;                   ;         ;
-; uIR_3_HALT                                                      ;                   ;         ;
-;      - my_start:inst|inst3~21                                   ; 1                 ; 0       ;
-;      - inst87                                                   ; 1                 ; 0       ;
-; uIR_12                                                          ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|51~560                 ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|45~534                 ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|44~534                 ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|43~760                 ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|45~534                ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|44~545                ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|43~534                ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:A~447                                 ; 0                 ; 6       ;
-; uIR_13                                                          ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|51~560                 ; 1                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|45~534                 ; 1                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|44~534                 ; 1                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|43~760                 ; 1                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|45~534                ; 1                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|44~545                ; 1                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|43~534                ; 1                 ; 6       ;
-;      - 3_state_1_gate_bus:A~447                                 ; 1                 ; 6       ;
-; uIR_15                                                          ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|44~542                ; 0                 ; 6       ;
-;      - 2-4:selB|inst3~25                                        ; 0                 ; 6       ;
-;      - 3_state_2_gate_bus:inst29|3_state_2_gate:inst|inst27~74  ; 0                 ; 6       ;
-;      - inst58~44                                                ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17~676 ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst13~169      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst12~161      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst11~161      ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|43~761                 ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst16~161      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst15~161      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst14~161      ; 0                 ; 6       ;
-; uIR_14                                                          ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst3|44~542                ; 0                 ; 6       ;
-;      - 2-4:selB|inst3~25                                        ; 0                 ; 6       ;
-;      - 3_state_2_gate_bus:inst29|3_state_2_gate:inst|inst27~74  ; 0                 ; 6       ;
-;      - inst58~44                                                ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17~676 ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst13~169      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst12~161      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst11~161      ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|43~761                 ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst16~161      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst15~161      ; 0                 ; 6       ;
-;      - 3_state_1_gate_bus:B|3_state_1_gate:inst|inst14~161      ; 0                 ; 6       ;
-; uIR8_C0                                                         ;                   ;         ;
-;      - alu_bus:inst8|alu:inst|74181:inst|79~16                  ; 0                 ; 6       ;
-;      - alu_bus:inst8|alu:inst|74181:inst|80                     ; 0                 ; 6       ;
-; CLR                                                             ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|110       ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|99        ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|87        ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|9         ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst7                             ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst8                             ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst9                             ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst6                             ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst                              ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst3                             ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst4                             ; 0                 ; 6       ;
-;      - reg8_bus:R3|reg8:inst1|inst5                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst7                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst8                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst9                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst6                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst                              ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst3                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst4                             ; 0                 ; 6       ;
-;      - reg8_bus:R2|reg8:inst1|inst5                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst7                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst8                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst9                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst6                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst                              ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst3                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst4                             ; 0                 ; 6       ;
-;      - reg8_bus:R1|reg8:inst1|inst5                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst7                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst8                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst9                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst6                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst                              ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst3                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst4                             ; 0                 ; 6       ;
-;      - reg8_bus:R0|reg8:inst1|inst5                             ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst6                            ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst                             ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst3                            ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst4                            ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst7                             ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst8                             ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst9                             ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst6                             ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst                              ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst3                             ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst4                             ; 0                 ; 6       ;
-;      - reg8_bus:PC|reg8:inst1|inst5                             ; 0                 ; 6       ;
-;      - my_start:inst|inst                                       ; 0                 ; 6       ;
-;      - reg8:SIG|inst7                                           ; 0                 ; 6       ;
-;      - reg8:SIG|inst8                                           ; 0                 ; 6       ;
-;      - reg8:SIG|inst9                                           ; 0                 ; 6       ;
-;      - reg8:SIG|inst5                                           ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9        ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87       ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99       ; 0                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110      ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst5                            ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst7                            ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst8                            ; 0                 ; 6       ;
-;      - reg8_bus:I_R|reg8:inst1|inst9                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst6                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst                             ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst3                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst4                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst5                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst7                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst8                            ; 0                 ; 6       ;
-;      - reg8_bus:MAR|reg8:inst1|inst9                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst                             ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst3                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst4                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst5                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst7                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst8                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst9                            ; 0                 ; 6       ;
-;      - reg8_bus:MDR|reg8:inst1|inst6                            ; 0                 ; 6       ;
-; uIR_1                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9~2      ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87~2     ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99~2     ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110~2    ; 1                 ; 6       ;
-;      - inst84~35                                                ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|75~44    ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|92~50    ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|102~50   ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|109~52   ; 1                 ; 6       ;
-;      - inst84                                                   ; 0                 ; 0       ;
-; uIR_2                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9        ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87       ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99       ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110      ; 1                 ; 6       ;
-;      - inst84~35                                                ; 1                 ; 6       ;
-;      - inst84                                                   ; 0                 ; 0       ;
-; uIR16                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~60     ; 0                 ; 6       ;
-; uIR_0                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9        ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87       ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99       ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110      ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~60     ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|92~125    ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|102~201   ; 1                 ; 6       ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|109~207   ; 1                 ; 6       ;
-;      - inst84                                                   ; 0                 ; 0       ;
-; uIR17                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|92~125    ; 0                 ; 6       ;
-; uIR18                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|102~201   ; 0                 ; 6       ;
-; uIR19                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|109~207   ; 0                 ; 6       ;
-; uIR20                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|75~44    ; 1                 ; 6       ;
-; uIR21                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|92~50    ; 0                 ; 6       ;
-; uIR22                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|102~50   ; 1                 ; 6       ;
-; uIR23                                                           ;                   ;         ;
-;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|109~52   ; 0                 ; 6       ;
-; START_CP                                                        ;                   ;         ;
-; uIR_6_expR                                                      ;                   ;         ;
-;      - inst87                                                   ; 1                 ; 0       ;
-; uIR_9                                                           ;                   ;         ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|22                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|17                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|15                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|19                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|18                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|16                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|21                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|20                    ; 1                 ; 0       ;
-; uIR_10                                                          ;                   ;         ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|22                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|17                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|15                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|19                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|18                    ; 1                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|16                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|21                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|20                    ; 0                 ; 0       ;
-; uIR_11                                                          ;                   ;         ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|22                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|17                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|15                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|19                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|18                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|16                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|21                    ; 0                 ; 0       ;
-;      - 3-8_bus:inst72|3-8:inst|74138:inst|20                    ; 0                 ; 0       ;
-+-----------------------------------------------------------------+-------------------+---------+
++----------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                               ;
++----------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                            ; Pad To Core Index ; Setting ;
++----------------------------------------------------------------+-------------------+---------+
+; DtRAM_0                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst10~20 ; 0                 ; 6       ;
+; DtRAM_1                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst11~20 ; 1                 ; 6       ;
+; DtRAM_2                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst12~20 ; 1                 ; 6       ;
+; DtRAM_3                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst13~20 ; 1                 ; 6       ;
+; DtRAM_4                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst14~20 ; 1                 ; 6       ;
+; DtRAM_5                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst15~20 ; 0                 ; 6       ;
+; DtRAM_6                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst16~20 ; 1                 ; 6       ;
+; DtRAM_7                                                        ;                   ;         ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst17~20 ; 0                 ; 6       ;
+; uIR4_RAM_WRITE                                                 ;                   ;         ;
+;      - DtRAM_0                                                 ; 0                 ; 6       ;
+;      - DtRAM_1                                                 ; 0                 ; 6       ;
+;      - DtRAM_2                                                 ; 0                 ; 6       ;
+;      - DtRAM_3                                                 ; 0                 ; 6       ;
+;      - DtRAM_4                                                 ; 0                 ; 6       ;
+;      - DtRAM_5                                                 ; 0                 ; 6       ;
+;      - DtRAM_6                                                 ; 0                 ; 6       ;
+;      - DtRAM_7                                                 ; 0                 ; 6       ;
+;      - inst28                                                  ; 0                 ; 6       ;
+;      - XINHAO27                                                ; 0                 ; 6       ;
+;      - RAM_WRITE_SIG                                           ; 0                 ; 6       ;
+; uIR5_RAM_READ                                                  ;                   ;         ;
+;      - inst28                                                  ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst13~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst12~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst11~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst10~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst14~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst15~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst16~20 ; 1                 ; 6       ;
+;      - 3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst17~20 ; 1                 ; 6       ;
+;      - RAM_READ_SIG                                            ; 1                 ; 6       ;
+; uIR_12                                                         ;                   ;         ;
+;      - 3_state_1_gate_bus:A~3505                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3508                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3511                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3514                               ; 0                 ; 6       ;
+;      - alu_bus:inst8|alu:inst|74181:inst3|80~5                 ; 0                 ; 6       ;
+;      - alu_bus:inst8|alu:inst|74181:inst3|14                   ; 0                 ; 6       ;
+;      - alu_bus:inst8|alu:inst|74181:inst3|44                   ; 0                 ; 6       ;
+;      - alu_bus:inst8|alu:inst|74181:inst3|9                    ; 0                 ; 6       ;
+;      - alu_bus:inst8|alu:inst|74181:inst3|43                   ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3523                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3526                               ; 0                 ; 6       ;
+; uIR_13                                                         ;                   ;         ;
+;      - 3_state_1_gate_bus:A~3505                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3508                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3511                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3514                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3517                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3520                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3523                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:A~3526                               ; 0                 ; 6       ;
+; uIR_15                                                         ;                   ;         ;
+;      - 3_state_1_gate_bus:B~4191                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4194                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4197                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4200                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4204                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4207                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4210                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4213                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4216                               ; 0                 ; 6       ;
+; uIR_14                                                         ;                   ;         ;
+;      - 3_state_1_gate_bus:B~4191                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4203                               ; 0                 ; 6       ;
+;      - 3_state_1_gate_bus:B~4204                               ; 0                 ; 6       ;
+; uIR8_C0                                                        ;                   ;         ;
+;      - alu_bus:inst8|alu:inst|74182:inst2|31~164               ; 0                 ; 6       ;
+;      - alu_bus:inst8|alu:inst|74181:inst|80~16                 ; 0                 ; 6       ;
+; CLR                                                            ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|110      ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|99       ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|87       ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|9        ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst7                           ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst8                           ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst9                           ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst6                           ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst                            ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst3                           ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst4                           ; 0                 ; 6       ;
+;      - reg8_bus:MDR|reg8:inst1|inst5                           ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst7                            ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst8                            ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst9                            ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst6                            ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst                             ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst3                            ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst4                            ; 0                 ; 6       ;
+;      - reg8_bus:R3|reg8:inst1|inst5                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst7                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst8                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst9                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst6                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst                             ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst3                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst4                            ; 0                 ; 6       ;
+;      - reg8_bus:R2|reg8:inst1|inst5                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst7                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst8                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst9                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst6                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst                             ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst3                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst4                            ; 0                 ; 6       ;
+;      - reg8_bus:R1|reg8:inst1|inst5                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst7                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst8                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst9                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst6                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst                             ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst3                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst4                            ; 0                 ; 6       ;
+;      - reg8_bus:R0|reg8:inst1|inst5                            ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst6                           ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst                            ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst3                           ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst4                           ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst7                            ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst8                            ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst9                            ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst6                            ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst                             ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst3                            ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst4                            ; 0                 ; 6       ;
+;      - reg8_bus:PC|reg8:inst1|inst5                            ; 0                 ; 6       ;
+;      - reg8:SIG|inst7                                          ; 0                 ; 6       ;
+;      - reg8:SIG|inst8                                          ; 0                 ; 6       ;
+;      - reg8:SIG|inst9                                          ; 0                 ; 6       ;
+;      - reg8:SIG|inst5                                          ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9       ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87      ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99      ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110     ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst5                           ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst7                           ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst8                           ; 0                 ; 6       ;
+;      - reg8_bus:I_R|reg8:inst1|inst9                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst6                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst                            ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst3                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst4                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst5                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst7                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst8                           ; 0                 ; 6       ;
+;      - reg8_bus:MAR|reg8:inst1|inst9                           ; 0                 ; 6       ;
+;      - my_start:inst|inst                                      ; 0                 ; 6       ;
+; uIR_0                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9       ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87      ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99      ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110     ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~61    ; 1                 ; 6       ;
+; uIR_2                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9       ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87      ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99      ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110     ; 1                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~61    ; 1                 ; 6       ;
+; uIR16                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~62    ; 1                 ; 6       ;
+; uIR_1                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9~2     ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87~2    ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99~2    ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110~2   ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~62    ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|92~125   ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|102~201  ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|109~207  ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|75~44   ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|92~50   ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|102~50  ; 0                 ; 6       ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|109~52  ; 0                 ; 6       ;
+; uIR17                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|92~125   ; 0                 ; 6       ;
+; uIR18                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|102~201  ; 0                 ; 6       ;
+; uIR19                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|109~207  ; 0                 ; 6       ;
+; uIR20                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9~2     ; 0                 ; 6       ;
+; uIR21                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87~2    ; 0                 ; 6       ;
+; uIR22                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99~2    ; 0                 ; 6       ;
+; uIR23                                                          ;                   ;         ;
+;      - counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110~2   ; 1                 ; 6       ;
+; CONTINUOUS_PULSE                                               ;                   ;         ;
+; uIR_3_HALT                                                     ;                   ;         ;
+;      - my_start:inst|inst3                                     ; 1                 ; 0       ;
+; uIR_6_expR                                                     ;                   ;         ;
+;      - inst87                                                  ; 0                 ; 0       ;
+; START_CP                                                       ;                   ;         ;
+; uIR_11                                                         ;                   ;         ;
+;      - inst26                                                  ; 0                 ; 0       ;
+;      - inst12                                                  ; 0                 ; 0       ;
+;      - inst17~24                                               ; 0                 ; 0       ;
+;      - inst14                                                  ; 1                 ; 0       ;
+;      - inst13                                                  ; 0                 ; 0       ;
+; uIR_10                                                         ;                   ;         ;
+;      - inst26                                                  ; 0                 ; 0       ;
+;      - inst12                                                  ; 1                 ; 0       ;
+;      - inst17~24                                               ; 0                 ; 0       ;
+;      - inst14                                                  ; 1                 ; 0       ;
+;      - inst13                                                  ; 1                 ; 0       ;
+; uIR_9                                                          ;                   ;         ;
+;      - inst26                                                  ; 1                 ; 0       ;
+;      - inst12                                                  ; 1                 ; 0       ;
+;      - inst17~24                                               ; 1                 ; 0       ;
+;      - inst14                                                  ; 1                 ; 0       ;
+;      - inst13                                                  ; 1                 ; 0       ;
++----------------------------------------------------------------+-------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                     ;
-+---------------------------------------+--------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
-; Name                                  ; Location           ; Fan-Out ; Usage         ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------+--------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
-; 3-8_bus:inst72|3-8:inst|74138:inst|15 ; LCCOMB_X7_Y9_N28   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK5            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|16 ; LCCOMB_X7_Y9_N2    ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|17 ; LCCOMB_X7_Y9_N26   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|18 ; LCCOMB_X7_Y9_N24   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK0            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|19 ; LCCOMB_X7_Y9_N14   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK2            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|20 ; LCCOMB_X7_Y9_N22   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|21 ; LCCOMB_X7_Y9_N20   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|22 ; LCCOMB_X7_Y9_N16   ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK1            ; --                        ;
-; CLR                                   ; PIN_77             ; 77      ; Async. clear  ; no     ; --                   ; --               ; --                        ;
-; START_CP                              ; PIN_132            ; 1       ; Clock         ; no     ; --                   ; --               ; --                        ;
-; inst84                                ; LCCOMB_X24_Y15_N30 ; 8       ; Clock         ; no     ; --                   ; --               ; --                        ;
-; inst87                                ; LCCOMB_X23_Y13_N18 ; 4       ; Clock         ; no     ; --                   ; --               ; --                        ;
-; uIR4_RAM_WRITE                        ; PIN_95             ; 9       ; Output enable ; no     ; --                   ; --               ; --                        ;
-; uIR5_RAM_READ                         ; PIN_96             ; 12      ; Output enable ; no     ; --                   ; --               ; --                        ;
-; uIR_0                                 ; PIN_89             ; 9       ; Sync. load    ; no     ; --                   ; --               ; --                        ;
-; uIR_2                                 ; PIN_92             ; 6       ; Sync. clear   ; no     ; --                   ; --               ; --                        ;
-+---------------------------------------+--------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                  ;
++---------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
+; Name                ; Location          ; Fan-Out ; Usage         ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
+; CLR                 ; PIN_77            ; 77      ; Async. clear  ; no     ; --                   ; --               ; --                        ;
+; START_CP            ; PIN_132           ; 1       ; Clock         ; no     ; --                   ; --               ; --                        ;
+; inst12              ; LCCOMB_X15_Y6_N22 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK1            ; --                        ;
+; inst13              ; LCCOMB_X16_Y5_N10 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; inst14              ; LCCOMB_X16_Y5_N24 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; inst17              ; LCCOMB_X15_Y6_N10 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; inst18              ; LCCOMB_X15_Y6_N14 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; inst20              ; LCCOMB_X15_Y6_N6  ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; inst25              ; LCCOMB_X15_Y6_N12 ; 8       ; Clock         ; yes    ; Global Clock         ; GCLK0            ; --                        ;
+; inst26              ; LCCOMB_X15_Y6_N20 ; 8       ; Clock         ; no     ; --                   ; --               ; --                        ;
+; inst28              ; LCCOMB_X19_Y6_N30 ; 8       ; Output enable ; no     ; --                   ; --               ; --                        ;
+; inst87              ; LCCOMB_X16_Y5_N6  ; 4       ; Clock         ; no     ; --                   ; --               ; --                        ;
+; my_start:inst|inst3 ; LCCOMB_X16_Y5_N4  ; 16      ; Clock         ; yes    ; Global Clock         ; GCLK3            ; --                        ;
+; uIR4_RAM_WRITE      ; PIN_95            ; 11      ; Output enable ; no     ; --                   ; --               ; --                        ;
+; uIR_0               ; PIN_89            ; 5       ; Sync. load    ; no     ; --                   ; --               ; --                        ;
+; uIR_2               ; PIN_92            ; 5       ; Sync. clear   ; no     ; --                   ; --               ; --                        ;
++---------------------+-------------------+---------+---------------+--------+----------------------+------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Global & Other Fast Signals                                                                                                              ;
-+---------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
-; Name                                  ; Location         ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
-; 3-8_bus:inst72|3-8:inst|74138:inst|15 ; LCCOMB_X7_Y9_N28 ; 8       ; Global Clock         ; GCLK5            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|16 ; LCCOMB_X7_Y9_N2  ; 8       ; Global Clock         ; GCLK7            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|17 ; LCCOMB_X7_Y9_N26 ; 8       ; Global Clock         ; GCLK3            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|18 ; LCCOMB_X7_Y9_N24 ; 8       ; Global Clock         ; GCLK0            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|19 ; LCCOMB_X7_Y9_N14 ; 8       ; Global Clock         ; GCLK2            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|20 ; LCCOMB_X7_Y9_N22 ; 8       ; Global Clock         ; GCLK6            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|21 ; LCCOMB_X7_Y9_N20 ; 8       ; Global Clock         ; GCLK4            ; --                        ;
-; 3-8_bus:inst72|3-8:inst|74138:inst|22 ; LCCOMB_X7_Y9_N16 ; 8       ; Global Clock         ; GCLK1            ; --                        ;
-+---------------------------------------+------------------+---------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                             ;
++---------------------+-------------------+---------+----------------------+------------------+---------------------------+
+; Name                ; Location          ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------+-------------------+---------+----------------------+------------------+---------------------------+
+; inst12              ; LCCOMB_X15_Y6_N22 ; 8       ; Global Clock         ; GCLK1            ; --                        ;
+; inst13              ; LCCOMB_X16_Y5_N10 ; 8       ; Global Clock         ; GCLK4            ; --                        ;
+; inst14              ; LCCOMB_X16_Y5_N24 ; 8       ; Global Clock         ; GCLK6            ; --                        ;
+; inst17              ; LCCOMB_X15_Y6_N10 ; 8       ; Global Clock         ; GCLK2            ; --                        ;
+; inst18              ; LCCOMB_X15_Y6_N14 ; 8       ; Global Clock         ; GCLK7            ; --                        ;
+; inst20              ; LCCOMB_X15_Y6_N6  ; 8       ; Global Clock         ; GCLK5            ; --                        ;
+; inst25              ; LCCOMB_X15_Y6_N12 ; 8       ; Global Clock         ; GCLK0            ; --                        ;
+; my_start:inst|inst3 ; LCCOMB_X16_Y5_N4  ; 16      ; Global Clock         ; GCLK3            ; --                        ;
++---------------------+-------------------+---------+----------------------+------------------+---------------------------+
 
 
-+--------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                    ;
-+----------------------------------------------------------+---------+
-; Name                                                     ; Fan-Out ;
-+----------------------------------------------------------+---------+
-; CLR                                                      ; 77      ;
-; reg8_bus:I_R|reg8:inst1|inst3                            ; 18      ;
-; reg8_bus:I_R|reg8:inst1|inst4                            ; 17      ;
-; reg8_bus:I_R|reg8:inst1|inst6                            ; 14      ;
-; uIR_14                                                   ; 12      ;
-; uIR_15                                                   ; 12      ;
-; uIR5_RAM_READ                                            ; 12      ;
-; my_start:inst|inst3~21                                   ; 11      ;
-; uIR_1                                                    ; 10      ;
-; reg8_bus:I_R|reg8:inst1|inst                             ; 10      ;
-; uIR_0                                                    ; 9       ;
-; uIR4_RAM_WRITE                                           ; 9       ;
-; alu_bus:inst8|alu:inst|74181:inst3|77                    ; 9       ;
-; alu_bus:inst8|alu:inst|74181:inst|80                     ; 9       ;
-; alu_bus:inst8|alu:inst|74181:inst|81                     ; 9       ;
-; alu_bus:inst8|alu:inst|74181:inst|82                     ; 9       ;
-; alu_bus:inst8|alu:inst|74181:inst|77                     ; 9       ;
-; 3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17~672 ; 9       ;
-; 3_state_2_gate_bus:inst29|3_state_2_gate:inst|inst27~75  ; 9       ;
-; uIR_11                                                   ; 8       ;
-; uIR_10                                                   ; 8       ;
-; uIR_9                                                    ; 8       ;
-; uIR_13                                                   ; 8       ;
-; uIR_12                                                   ; 8       ;
-; inst84                                                   ; 8       ;
-; alu_bus:inst8|alu:inst|74181:inst3|80                    ; 8       ;
-; alu_bus:inst8|alu:inst|74181:inst3|81                    ; 8       ;
-; alu_bus:inst8|alu:inst|74181:inst3|82                    ; 8       ;
-; 3_state_2_gate_bus:inst29|3_state_2_gate:inst|inst27~74  ; 8       ;
-; alu_bus:inst8|alu:inst|74181:inst3|44~542                ; 8       ;
-; uIR_2                                                    ; 6       ;
-; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|9         ; 6       ;
-; alu_bus:inst8|alu:inst|74181:inst3|43~536                ; 5       ;
-; alu_bus:inst8|alu:inst|74181:inst|79~16                  ; 5       ;
-; alu_bus:inst8|alu:inst|74181:inst|44~536                 ; 5       ;
-; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|110       ; 5       ;
-; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|87        ; 5       ;
-; inst87                                                   ; 4       ;
-; inst84~35                                                ; 4       ;
-; alu_bus:inst8|alu:inst|74181:inst3|74                    ; 4       ;
-; alu_bus:inst8|alu:inst|74181:inst3|44~547                ; 4       ;
-; alu_bus:inst8|alu:inst|74182:inst2|22                    ; 4       ;
-; alu_bus:inst8|alu:inst|74181:inst|45~536                 ; 4       ;
-; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|99        ; 4       ;
-; counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87       ; 4       ;
-; counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9        ; 4       ;
-; counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|89~11    ; 3       ;
-; 3_state_1_gate_bus:A~447                                 ; 3       ;
-; 3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17~677 ; 3       ;
-; alu_bus:inst8|alu:inst|74181:inst3|45~536                ; 3       ;
-+----------------------------------------------------------+---------+
++-----------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                 ;
++-------------------------------------------------------+---------+
+; Name                                                  ; Fan-Out ;
++-------------------------------------------------------+---------+
+; CLR                                                   ; 77      ;
+; reg8_bus:I_R|reg8:inst1|inst                          ; 19      ;
+; reg8_bus:I_R|reg8:inst1|inst6                         ; 17      ;
+; reg8_bus:I_R|reg8:inst1|inst3                         ; 16      ;
+; reg8_bus:I_R|reg8:inst1|inst4                         ; 15      ;
+; 3_state_1_gate_bus:B~4191                             ; 13      ;
+; uIR_1                                                 ; 12      ;
+; uIR_12                                                ; 11      ;
+; uIR4_RAM_WRITE                                        ; 11      ;
+; uIR5_RAM_READ                                         ; 10      ;
+; uIR_15                                                ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst3|82                 ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst3|77                 ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst|77                  ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst3|81                 ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst|81                  ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst|82                  ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst|80~16               ; 9       ;
+; alu_bus:inst8|alu:inst|74181:inst3|80                 ; 9       ;
+; uIR_13                                                ; 8       ;
+; inst26                                                ; 8       ;
+; inst28                                                ; 8       ;
+; my_start:inst|inst3                                   ; 7       ;
+; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|9      ; 6       ;
+; uIR_9                                                 ; 5       ;
+; uIR_10                                                ; 5       ;
+; uIR_11                                                ; 5       ;
+; uIR_2                                                 ; 5       ;
+; uIR_0                                                 ; 5       ;
+; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|110    ; 5       ;
+; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|87     ; 5       ;
+; inst17~24                                             ; 4       ;
+; inst87                                                ; 4       ;
+; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|75~61  ; 4       ;
+; 3_state_1_gate_bus:B~4216                             ; 4       ;
+; 3_state_1_gate_bus:A~3526                             ; 4       ;
+; alu_bus:inst8|alu:inst|74181:inst3|74~79              ; 4       ;
+; counter_bus:uPC|uPC:inst|74161:inst|f74161:sub|99     ; 4       ;
+; counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87    ; 4       ;
+; counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|9     ; 4       ;
+; uIR_14                                                ; 3       ;
+; counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|89~11 ; 3       ;
+; alu_bus:inst8|alu:inst|74181:inst3|43                 ; 3       ;
+; alu_bus:inst8|alu:inst|74181:inst3|69~3               ; 3       ;
+; alu_bus:inst8|alu:inst|74181:inst3|44                 ; 3       ;
+; alu_bus:inst8|alu:inst|74181:inst3|14                 ; 3       ;
+; 3_state_1_gate_bus:A~3517                             ; 3       ;
+; 3_state_1_gate_bus:B~4207                             ; 3       ;
+; alu_bus:inst8|alu:inst|74182:inst2|31~166             ; 3       ;
+; alu_bus:inst8|alu:inst|74182:inst2|31~164             ; 3       ;
++-------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Interconnect Usage Summary                          ;
-+----------------------------+------------------------+
-; Interconnect Resource Type ; Usage                  ;
-+----------------------------+------------------------+
-; Block interconnects        ; 298 / 26,052 ( 1 % )   ;
-; C16 interconnects          ; 44 / 1,156 ( 4 % )     ;
-; C4 interconnects           ; 244 / 17,952 ( 1 % )   ;
-; Direct links               ; 44 / 26,052 ( < 1 % )  ;
-; Global clocks              ; 8 / 8 ( 100 % )        ;
-; Local interconnects        ; 78 / 8,256 ( < 1 % )   ;
-; R24 interconnects          ; 46 / 1,020 ( 5 % )     ;
-; R4 interconnects           ; 224 / 22,440 ( < 1 % ) ;
-+----------------------------+------------------------+
++----------------------------------------------------+
+; Interconnect Usage Summary                         ;
++----------------------------+-----------------------+
+; Interconnect Resource Type ; Usage                 ;
++----------------------------+-----------------------+
+; Block interconnects        ; 339 / 26,052 ( 1 % )  ;
+; C16 interconnects          ; 30 / 1,156 ( 3 % )    ;
+; C4 interconnects           ; 266 / 17,952 ( 1 % )  ;
+; Direct links               ; 43 / 26,052 ( < 1 % ) ;
+; Global clocks              ; 8 / 8 ( 100 % )       ;
+; Local interconnects        ; 65 / 8,256 ( < 1 % )  ;
+; R24 interconnects          ; 47 / 1,020 ( 5 % )    ;
+; R4 interconnects           ; 339 / 22,440 ( 2 % )  ;
++----------------------------+-----------------------+
 
 
-+----------------------------------------------------------------------------+
-; LAB Logic Elements                                                         ;
-+---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 12.15) ; Number of LABs  (Total = 13) ;
-+---------------------------------------------+------------------------------+
-; 1                                           ; 1                            ;
-; 2                                           ; 0                            ;
-; 3                                           ; 0                            ;
-; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
-; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
-; 8                                           ; 1                            ;
-; 9                                           ; 1                            ;
-; 10                                          ; 0                            ;
-; 11                                          ; 0                            ;
-; 12                                          ; 0                            ;
-; 13                                          ; 0                            ;
-; 14                                          ; 0                            ;
-; 15                                          ; 0                            ;
-; 16                                          ; 8                            ;
-+---------------------------------------------+------------------------------+
++---------------------------------------------------------------------------+
+; LAB Logic Elements                                                        ;
++--------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 8.28) ; Number of LABs  (Total = 18) ;
++--------------------------------------------+------------------------------+
+; 1                                          ; 7                            ;
+; 2                                          ; 1                            ;
+; 3                                          ; 0                            ;
+; 4                                          ; 0                            ;
+; 5                                          ; 0                            ;
+; 6                                          ; 1                            ;
+; 7                                          ; 0                            ;
+; 8                                          ; 0                            ;
+; 9                                          ; 0                            ;
+; 10                                         ; 1                            ;
+; 11                                         ; 0                            ;
+; 12                                         ; 1                            ;
+; 13                                         ; 0                            ;
+; 14                                         ; 0                            ;
+; 15                                         ; 0                            ;
+; 16                                         ; 7                            ;
++--------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.46) ; Number of LABs  (Total = 13) ;
+; LAB-wide Signals  (Average = 1.61) ; Number of LABs  (Total = 18) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 10                           ;
-; 1 Clock                            ; 2                            ;
-; 2 Clocks                           ; 7                            ;
+; 1 Async. clear                     ; 11                           ;
+; 1 Clock                            ; 8                            ;
+; 2 Clocks                           ; 10                           ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 16.69) ; Number of LABs  (Total = 13) ;
+; Number of Signals Sourced  (Average = 12.39) ; Number of LABs  (Total = 18) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 1                            ;
-; 2                                            ; 0                            ;
+; 1                                            ; 4                            ;
+; 2                                            ; 3                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 2                            ;
+; 7                                            ; 0                            ;
 ; 8                                            ; 1                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
 ; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
-; 14                                           ; 1                            ;
-; 15                                           ; 0                            ;
-; 16                                           ; 0                            ;
-; 17                                           ; 0                            ;
-; 18                                           ; 1                            ;
-; 19                                           ; 1                            ;
-; 20                                           ; 0                            ;
-; 21                                           ; 0                            ;
-; 22                                           ; 1                            ;
-; 23                                           ; 2                            ;
-; 24                                           ; 1                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 1                            ;
-+----------------------------------------------+------------------------------+
-
-
-+---------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                         ;
-+--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 10.46) ; Number of LABs  (Total = 13) ;
-+--------------------------------------------------+------------------------------+
-; 0                                                ; 0                            ;
-; 1                                                ; 1                            ;
-; 2                                                ; 0                            ;
-; 3                                                ; 0                            ;
-; 4                                                ; 0                            ;
-; 5                                                ; 1                            ;
-; 6                                                ; 0                            ;
-; 7                                                ; 1                            ;
-; 8                                                ; 2                            ;
-; 9                                                ; 2                            ;
-; 10                                               ; 0                            ;
-; 11                                               ; 1                            ;
-; 12                                               ; 1                            ;
-; 13                                               ; 1                            ;
-; 14                                               ; 0                            ;
-; 15                                               ; 0                            ;
-; 16                                               ; 1                            ;
-; 17                                               ; 0                            ;
-; 18                                               ; 1                            ;
-; 19                                               ; 1                            ;
-+--------------------------------------------------+------------------------------+
-
-
-+-----------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                         ;
-+----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 18.23) ; Number of LABs  (Total = 13) ;
-+----------------------------------------------+------------------------------+
-; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 0                            ;
-; 3                                            ; 0                            ;
-; 4                                            ; 2                            ;
-; 5                                            ; 0                            ;
-; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 1                            ;
-; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 0                            ;
+; 13                                           ; 1                            ;
 ; 14                                           ; 0                            ;
 ; 15                                           ; 0                            ;
 ; 16                                           ; 0                            ;
 ; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 2                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 0                            ;
+; 19                                           ; 1                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 1                            ;
 ; 22                                           ; 0                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 1                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 3                            ;
 ; 25                                           ; 0                            ;
 ; 26                                           ; 0                            ;
 ; 27                                           ; 0                            ;
-; 28                                           ; 1                            ;
+; 28                                           ; 0                            ;
 ; 29                                           ; 0                            ;
 ; 30                                           ; 1                            ;
-; 31                                           ; 2                            ;
++----------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 8.56) ; Number of LABs  (Total = 18) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 7                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 0                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 0                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 0                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 1                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 3                            ;
+; 17                                              ; 1                            ;
+; 18                                              ; 0                            ;
+; 19                                              ; 0                            ;
+; 20                                              ; 1                            ;
+; 21                                              ; 0                            ;
+; 22                                              ; 0                            ;
+; 23                                              ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 14.50) ; Number of LABs  (Total = 18) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 0                            ;
+; 2                                            ; 7                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 1                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 0                            ;
+; 11                                           ; 0                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 1                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 1                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 0                            ;
+; 28                                           ; 0                            ;
+; 29                                           ; 2                            ;
+; 30                                           ; 0                            ;
+; 31                                           ; 1                            ;
+; 32                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
 
@@ -1225,8 +1227,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------------------------------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s)                                     ; Delay Added in ns ;
 +-----------------+----------------------------------------------------------+-------------------+
-; START_CP        ; uIR_0,uIR_3_HALT,CONTINUOUS_PULSE,START_CP,uIR_2,uIR_1   ; 3.82703           ;
-; START_CP        ; uIR_3_HALT,CONTINUOUS_PULSE,START_CP,uIR_10,uIR_9,uIR_11 ; 1.49809           ;
+; START_CP        ; uIR_3_HALT,CONTINUOUS_PULSE,START_CP                     ; 3.53703           ;
+; START_CP        ; uIR_3_HALT,CONTINUOUS_PULSE,START_CP,uIR_9,uIR_10,uIR_11 ; 3.48796           ;
 +-----------------+----------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -1250,31 +1252,30 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------------------------------------+-----------------+
 ; Auto Fit Point 1 - Fit Attempt 1                                 ; ff              ;
 ; Mid Wire Use - Fit Attempt 1                                     ; 1               ;
-; Mid Slack - Fit Attempt 1                                        ; -12887          ;
-; Internal Atom Count - Fit Attempt 1                              ; 199             ;
-; LE/ALM Count - Fit Attempt 1                                     ; 146             ;
-; LAB Count - Fit Attempt 1                                        ; 14              ;
-; Outputs per Lab - Fit Attempt 1                                  ; 10.071          ;
-; Inputs per LAB - Fit Attempt 1                                   ; 16.286          ;
-; Global Inputs per LAB - Fit Attempt 1                            ; 1.071           ;
-; LAB Constraint 'non-global clock + sync load' - Fit Attempt 1    ; 0:11;1:2;2:1    ;
-; LAB Constraint 'non-global controls' - Fit Attempt 1             ; 0:4;1:7;2:2;4:1 ;
-; LAB Constraint 'non-global + aclr' - Fit Attempt 1               ; 0:4;1:7;2:2;4:1 ;
-; LAB Constraint 'global non-clock non-aclr' - Fit Attempt 1       ; 0:14            ;
-; LAB Constraint 'global controls' - Fit Attempt 1                 ; 0:5;1:3;2:6     ;
-; LAB Constraint 'deterministic LABSMUXA/LABXMUXB' - Fit Attempt 1 ; 0:4;1:7;2:3     ;
-; LAB Constraint 'deterministic LABSMUXC/LABXMUXD' - Fit Attempt 1 ; 0:11;1:2;3:1    ;
-; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1      ; 0:4;1:2;2:8     ;
-; LAB Constraint 'aclr constraint' - Fit Attempt 1                 ; 0:4;1:10        ;
-; LAB Constraint 'true sload_sclear pair' - Fit Attempt 1          ; 0:7;1:7         ;
-; LAB Constraint 'constant sload_sclear pair' - Fit Attempt 1      ; 0:14            ;
-; LAB Constraint 'has placement constraint' - Fit Attempt 1        ; 0:14            ;
+; Mid Slack - Fit Attempt 1                                        ; -17829          ;
+; Internal Atom Count - Fit Attempt 1                              ; 208             ;
+; LE/ALM Count - Fit Attempt 1                                     ; 140             ;
+; LAB Count - Fit Attempt 1                                        ; 19              ;
+; Outputs per Lab - Fit Attempt 1                                  ; 8.158           ;
+; Inputs per LAB - Fit Attempt 1                                   ; 12.579          ;
+; Global Inputs per LAB - Fit Attempt 1                            ; 1.263           ;
+; LAB Constraint 'non-global clock + sync load' - Fit Attempt 1    ; 0:15;1:2;2:2    ;
+; LAB Constraint 'non-global controls' - Fit Attempt 1             ; 0:8;1:7;2:1;3:3 ;
+; LAB Constraint 'non-global + aclr' - Fit Attempt 1               ; 0:8;1:7;2:1;3:3 ;
+; LAB Constraint 'global non-clock non-aclr' - Fit Attempt 1       ; 0:19            ;
+; LAB Constraint 'global controls' - Fit Attempt 1                 ; 0:3;1:8;2:8     ;
+; LAB Constraint 'deterministic LABSMUXA/LABXMUXB' - Fit Attempt 1 ; 0:8;1:8;2:3     ;
+; LAB Constraint 'deterministic LABSMUXC/LABXMUXD' - Fit Attempt 1 ; 0:15;1:3;2:1    ;
+; LAB Constraint 'clock / ce pair constraint' - Fit Attempt 1      ; 0:1;1:7;2:11    ;
+; LAB Constraint 'aclr constraint' - Fit Attempt 1                 ; 0:1;1:17;2:1    ;
+; LAB Constraint 'true sload_sclear pair' - Fit Attempt 1          ; 0:12;1:7        ;
+; LAB Constraint 'constant sload_sclear pair' - Fit Attempt 1      ; 0:19            ;
+; LAB Constraint 'has placement constraint' - Fit Attempt 1        ; 0:19            ;
 ; LEs in Chains - Fit Attempt 1                                    ; 0               ;
 ; LEs in Long Chains - Fit Attempt 1                               ; 0               ;
 ; LABs with Chains - Fit Attempt 1                                 ; 0               ;
 ; LABs with Multiple Chains - Fit Attempt 1                        ; 0               ;
 ; Time - Fit Attempt 1                                             ; 0               ;
-; Time in tsm_tan.dll - Fit Attempt 1                              ; 0.016           ;
 +------------------------------------------------------------------+-----------------+
 
 
@@ -1285,21 +1286,21 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------+--------+
 ; Auto Fit Point 2 - Fit Attempt 1   ; ff     ;
 ; Early Wire Use - Fit Attempt 1     ; 1      ;
-; Early Slack - Fit Attempt 1        ; -15680 ;
+; Early Slack - Fit Attempt 1        ; -20241 ;
 ; Auto Fit Point 5 - Fit Attempt 1   ; ff     ;
 ; Mid Wire Use - Fit Attempt 1       ; 2      ;
-; Mid Slack - Fit Attempt 1          ; -16125 ;
+; Mid Slack - Fit Attempt 1          ; -15902 ;
 ; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
 ; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
 ; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
 ; Auto Fit Point 5 - Fit Attempt 1   ; ff     ;
 ; Mid Wire Use - Fit Attempt 1       ; 2      ;
-; Mid Slack - Fit Attempt 1          ; -16125 ;
+; Mid Slack - Fit Attempt 1          ; -15902 ;
 ; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
 ; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
 ; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
 ; Late Wire Use - Fit Attempt 1      ; 2      ;
-; Late Slack - Fit Attempt 1         ; -16125 ;
+; Late Slack - Fit Attempt 1         ; -15902 ;
 ; Peak Regional Wire - Fit Attempt 1 ; 0.000  ;
 ; Auto Fit Point 7 - Fit Attempt 1   ; ff     ;
 ; Time - Fit Attempt 1               ; 0      ;
@@ -1311,10 +1312,10 @@ This will disable optimization of problematic paths and expose them for further 
 +-------------------------------------+-------------+
 ; Name                                ; Value       ;
 +-------------------------------------+-------------+
-; Early Slack - Fit Attempt 1         ; -12753      ;
+; Early Slack - Fit Attempt 1         ; -12670      ;
 ; Early Wire Use - Fit Attempt 1      ; 2           ;
-; Peak Regional Wire - Fit Attempt 1  ; 4           ;
-; Mid Slack - Fit Attempt 1           ; -13597      ;
+; Peak Regional Wire - Fit Attempt 1  ; 5           ;
+; Mid Slack - Fit Attempt 1           ; -13027      ;
 ; Late Slack - Fit Attempt 1          ; -2147483648 ;
 ; Late Wire Use - Fit Attempt 1       ; 2           ;
 ; Time - Fit Attempt 1                ; 0           ;
@@ -1328,7 +1329,7 @@ This will disable optimization of problematic paths and expose them for further 
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed May 25 02:09:01 2022
+    Info: Processing started: Thu May 26 21:15:08 2022
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off final_design -c final_design
 Info: Selected device EP2C8Q208C7 for design "final_design"
 Info: Low junction temperature is 0 degrees C
@@ -1342,21 +1343,29 @@ Info: Fitter converted 2 user pins into dedicated programming pins
     Info: Pin ~nCSO~ is reserved at location 2
 Info: Fitter is using the Classic Timing Analyzer
 Info: Timing requirements not specified -- quality metrics such as performance and power consumption may be sacrificed to reduce compilation time.
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|15 
+Info: Automatically promoted node my_start:inst|inst3 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|16 
+    Info: Following destination nodes may be non-global or may not use global or regional clocks
+        Info: Destination node inst87
+        Info: Destination node inst26
+        Info: Destination node inst12
+        Info: Destination node inst17~24
+        Info: Destination node inst14
+        Info: Destination node inst13
+        Info: Destination node CPuIR
+Info: Automatically promoted node inst12 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|17 
+Info: Automatically promoted node inst13 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|18 
+Info: Automatically promoted node inst14 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|19 
+Info: Automatically promoted node inst17 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|20 
+Info: Automatically promoted node inst18 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|21 
+Info: Automatically promoted node inst20 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
-Info: Automatically promoted node 3-8_bus:inst72|3-8:inst|74138:inst|22 
+Info: Automatically promoted node inst25 
     Info: Automatically promoted destinations to use location or clock signal Global Clock
 Info: Starting register packing
 Extra Info: Performing register packing on registers with non-logic cell location assignments
@@ -1373,28 +1382,30 @@ Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
 Info: Fitter placement operations ending: elapsed time is 00:00:00
-Info: Estimated most critical path is register to register delay of 11.066 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X25_Y12; Fanout = 2; REG Node = 'reg8_bus:R1|reg8:inst1|inst4'
-    Info: 2: + IC(0.771 ns) + CELL(0.545 ns) = 1.316 ns; Loc. = LAB_X25_Y13; Fanout = 1; COMB Node = '3_state_1_gate_bus:B|3_state_1_gate:inst|inst13~167'
-    Info: 3: + IC(0.932 ns) + CELL(0.278 ns) = 2.526 ns; Loc. = LAB_X24_Y14; Fanout = 1; COMB Node = '3_state_1_gate_bus:B|3_state_1_gate:inst|inst13~169'
-    Info: 4: + IC(1.630 ns) + CELL(0.544 ns) = 4.700 ns; Loc. = LAB_X15_Y17; Fanout = 1; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst|51~561'
-    Info: 5: + IC(1.855 ns) + CELL(0.322 ns) = 6.877 ns; Loc. = LAB_X24_Y13; Fanout = 3; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst|51~562'
-    Info: 6: + IC(0.154 ns) + CELL(0.521 ns) = 7.552 ns; Loc. = LAB_X24_Y13; Fanout = 1; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst3|74~30'
-    Info: 7: + IC(0.732 ns) + CELL(0.178 ns) = 8.462 ns; Loc. = LAB_X23_Y13; Fanout = 4; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst3|74'
-    Info: 8: + IC(1.076 ns) + CELL(0.178 ns) = 9.716 ns; Loc. = LAB_X23_Y12; Fanout = 9; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst3|77'
-    Info: 9: + IC(0.932 ns) + CELL(0.322 ns) = 10.970 ns; Loc. = LAB_X23_Y13; Fanout = 1; COMB Node = 'alu_bus:inst8|alu:inst|inst14'
-    Info: 10: + IC(0.000 ns) + CELL(0.096 ns) = 11.066 ns; Loc. = LAB_X23_Y13; Fanout = 2; REG Node = 'reg8:SIG|inst9'
-    Info: Total cell delay = 2.984 ns ( 26.97 % )
-    Info: Total interconnect delay = 8.082 ns ( 73.03 % )
+Info: Estimated most critical path is register to register delay of 9.765 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X16_Y6; Fanout = 2; REG Node = 'reg8_bus:R1|reg8:inst1|inst6'
+    Info: 2: + IC(0.794 ns) + CELL(0.178 ns) = 0.972 ns; Loc. = LAB_X15_Y6; Fanout = 1; COMB Node = '3_state_1_gate_bus:A~3512'
+    Info: 3: + IC(0.498 ns) + CELL(0.178 ns) = 1.648 ns; Loc. = LAB_X15_Y6; Fanout = 1; COMB Node = '3_state_1_gate_bus:A~3513'
+    Info: 4: + IC(0.891 ns) + CELL(0.322 ns) = 2.861 ns; Loc. = LAB_X18_Y6; Fanout = 2; COMB Node = '3_state_1_gate_bus:A~3514'
+    Info: 5: + IC(0.420 ns) + CELL(0.521 ns) = 3.802 ns; Loc. = LAB_X17_Y6; Fanout = 3; COMB Node = 'alu_bus:inst8|alu:inst|74182:inst2|31~164'
+    Info: 6: + IC(0.354 ns) + CELL(0.322 ns) = 4.478 ns; Loc. = LAB_X17_Y6; Fanout = 1; COMB Node = 'alu_bus:inst8|alu:inst|74182:inst2|31~165'
+    Info: 7: + IC(0.354 ns) + CELL(0.322 ns) = 5.154 ns; Loc. = LAB_X17_Y6; Fanout = 3; COMB Node = 'alu_bus:inst8|alu:inst|74182:inst2|31~166'
+    Info: 8: + IC(0.354 ns) + CELL(0.322 ns) = 5.830 ns; Loc. = LAB_X17_Y6; Fanout = 3; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst3|69~3'
+    Info: 9: + IC(0.923 ns) + CELL(0.322 ns) = 7.075 ns; Loc. = LAB_X19_Y6; Fanout = 9; COMB Node = 'alu_bus:inst8|alu:inst|74181:inst3|81'
+    Info: 10: + IC(0.891 ns) + CELL(0.278 ns) = 8.244 ns; Loc. = LAB_X22_Y6; Fanout = 1; COMB Node = 'alu_bus:inst8|alu:inst|inst14~109'
+    Info: 11: + IC(0.970 ns) + CELL(0.455 ns) = 9.669 ns; Loc. = LAB_X17_Y6; Fanout = 1; COMB Node = 'alu_bus:inst8|alu:inst|inst14'
+    Info: 12: + IC(0.000 ns) + CELL(0.096 ns) = 9.765 ns; Loc. = LAB_X17_Y6; Fanout = 2; REG Node = 'reg8:SIG|inst9'
+    Info: Total cell delay = 3.316 ns ( 33.96 % )
+    Info: Total interconnect delay = 6.449 ns ( 66.04 % )
 Info: Fitter routing operations beginning
 Info: Average interconnect usage is 1% of the available device resources
-    Info: Peak interconnect usage is 3% of the available device resources in the region that extends from location X23_Y10 to location X34_Y19
+    Info: Peak interconnect usage is 4% of the available device resources in the region that extends from location X11_Y0 to location X22_Y9
 Info: Fitter routing operations ending: elapsed time is 00:00:00
 Info: The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info: Optimizations that may affect the design's routability were skipped
     Info: Optimizations that may affect the design's timing were skipped
 Info: Started post-fitting delay annotation
-Warning: Found 32 output pins without output pin load capacitance assignment
+Warning: Found 42 output pins without output pin load capacitance assignment
     Info: Pin "AdRAM_0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "AdRAM_1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "AdRAM_2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1403,6 +1414,7 @@ Warning: Found 32 output pins without output pin load capacitance assignment
     Info: Pin "AdRAM_5" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "AdRAM_6" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "AdRAM_7" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "DtRAM_0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "DtRAM_1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "DtRAM_2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "DtRAM_3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1410,7 +1422,6 @@ Warning: Found 32 output pins without output pin load capacitance assignment
     Info: Pin "DtRAM_5" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "DtRAM_6" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "DtRAM_7" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info: Pin "DtRAM_0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "Z_zero" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "C_extra" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "N_negative" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1427,9 +1438,22 @@ Warning: Found 32 output pins without output pin load capacitance assignment
     Info: Pin "RAM_READ_SIG" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "uRD" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info: Pin "CPuIR" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST0" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST1" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST2" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST3" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST4" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST5" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST6" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "TEST7" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "XINHAO" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
+    Info: Pin "XINHAO27" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info: Delay annotation completed successfully
+Warning: Following 1 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results
+    Info: Pin uRD has GND driving its datain port
 Info: Following groups of pins have the same output enable
     Info: Following pins have the same output enable: uIR4_RAM_WRITE
+        Info: Type bi-directional pin DtRAM_0 uses the 3.3-V LVTTL I/O standard
         Info: Type bi-directional pin DtRAM_1 uses the 3.3-V LVTTL I/O standard
         Info: Type bi-directional pin DtRAM_2 uses the 3.3-V LVTTL I/O standard
         Info: Type bi-directional pin DtRAM_3 uses the 3.3-V LVTTL I/O standard
@@ -1437,12 +1461,11 @@ Info: Following groups of pins have the same output enable
         Info: Type bi-directional pin DtRAM_5 uses the 3.3-V LVTTL I/O standard
         Info: Type bi-directional pin DtRAM_6 uses the 3.3-V LVTTL I/O standard
         Info: Type bi-directional pin DtRAM_7 uses the 3.3-V LVTTL I/O standard
-        Info: Type bi-directional pin DtRAM_0 uses the 3.3-V LVTTL I/O standard
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info: Quartus II Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 300 megabytes
-    Info: Processing ended: Wed May 25 02:09:02 2022
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II Fitter was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 216 megabytes
+    Info: Processing ended: Thu May 26 21:15:14 2022
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
 
 

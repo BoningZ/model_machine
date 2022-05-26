@@ -1,5 +1,5 @@
 Analysis & Synthesis report for final_design
-Wed May 25 02:09:00 2022
+Thu May 26 21:15:07 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -13,9 +13,10 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
   7. General Register Statistics
-  8. Parameter Settings for User Entity Instance: counter_bus:uPC|uPC:inst|74161:inst
-  9. Parameter Settings for User Entity Instance: counter_bus:uPC|uPC:inst|74161:inst1
- 10. Analysis & Synthesis Messages
+  8. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Parameter Settings for User Entity Instance: counter_bus:uPC|uPC:inst|74161:inst
+ 10. Parameter Settings for User Entity Instance: counter_bus:uPC|uPC:inst|74161:inst1
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -41,16 +42,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 25 02:09:00 2022   ;
+; Analysis & Synthesis Status        ; Successful - Thu May 26 21:15:06 2022   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; final_design                            ;
 ; Top-level Entity Name              ; final_design                            ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 121                                     ;
-;     Total combinational functions  ; 121                                     ;
-;     Dedicated logic registers      ; 77                                      ;
-; Total registers                    ; 77                                      ;
-; Total pins                         ; 58                                      ;
+; Total logic elements               ; 122                                     ;
+;     Total combinational functions  ; 122                                     ;
+;     Dedicated logic registers      ; 85                                      ;
+; Total registers                    ; 85                                      ;
+; Total pins                         ; 68                                      ;
 ; Total virtual pins                 ; 0                                       ;
 ; Total memory bits                  ; 0                                       ;
 ; Embedded Multiplier 9-bit elements ; 0                                       ;
@@ -134,37 +135,37 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+
-; final_design.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/final_design.bdf             ;
-; 333/reg8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/reg8.bdf                 ;
-; BUSed/alu_bus.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/alu_bus.bdf            ;
-; BUSed/reg8_bus.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/reg8_bus.bdf           ;
-; 333/uPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/uPC.bdf                  ;
-; 333/my_start.bdf                 ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/my_start.bdf             ;
-; 333/alu.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/alu.bdf                  ;
-; 333/3-8.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/3-8.bdf                  ;
-; 333/2-4.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/2-4.bdf                  ;
-; BUSed/counter_bus.bdf            ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/counter_bus.bdf        ;
-; 333/3_state_1_gate.bdf           ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/3_state_1_gate.bdf       ;
-; BUSed/3_state_1_gate_bus.bdf     ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/3_state_1_gate_bus.bdf ;
-; 333/3_state_2_gate.bdf           ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/3_state_2_gate.bdf       ;
-; BUSed/3_state_2_gate_bus.bdf     ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/3_state_2_gate_bus.bdf ;
-; 333/selector2.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/333/selector2.bdf            ;
-; BUSed/selector2_bus.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/selector2_bus.bdf      ;
-; BUSed/selector4_bus.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/selector4_bus.bdf      ;
-; BUSed/selector_halfa.bdf         ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/selector_halfa.bdf     ;
-; BUSed/3-8_bus.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/quartus/quartus/final_design/BUSed/3-8_bus.bdf            ;
-; 74181.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74181.bdf       ;
-; 74182.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74182.bdf       ;
-; 74138.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74138.bdf       ;
-; 74161.tdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74161.tdf       ;
-; aglobal.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/aglobal.inc       ;
-; f74161.bdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/f74161.bdf      ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                              ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+
+; final_design.bdf                 ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/final_design.bdf                 ;
+; 333/reg8.bdf                     ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/reg8.bdf                     ;
+; BUSed/alu_bus.bdf                ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/alu_bus.bdf                ;
+; BUSed/reg8_bus.bdf               ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/reg8_bus.bdf               ;
+; 333/uPC.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/uPC.bdf                      ;
+; 333/my_start.bdf                 ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/my_start.bdf                 ;
+; 333/alu.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/alu.bdf                      ;
+; 333/3-8.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/3-8.bdf                      ;
+; 333/2-4.bdf                      ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/2-4.bdf                      ;
+; BUSed/counter_bus.bdf            ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/counter_bus.bdf            ;
+; 333/3_state_1_gate.bdf           ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/3_state_1_gate.bdf           ;
+; BUSed/3_state_1_gate_bus.bdf     ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/3_state_1_gate_bus.bdf     ;
+; 333/3_state_2_gate.bdf           ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/3_state_2_gate.bdf           ;
+; BUSed/3_state_2_gate_bus.bdf     ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/3_state_2_gate_bus.bdf     ;
+; 333/selector2.bdf                ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/333/selector2.bdf                ;
+; BUSed/selector2_bus.bdf          ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/selector2_bus.bdf          ;
+; BUSed/selector4_bus.bdf          ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/selector4_bus.bdf          ;
+; BUSed/selector_halfa.bdf         ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/selector_halfa.bdf         ;
+; BUSed/3-8_bus.bdf                ; yes             ; User Block Diagram/Schematic File  ; E:/计组课设/final_design/BUSed/3-8_bus.bdf                ;
+; 74181.bdf                        ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/74181.bdf  ;
+; 74182.bdf                        ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/74182.bdf  ;
+; 74138.bdf                        ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/74138.bdf  ;
+; 74161.tdf                        ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/74161.tdf  ;
+; aglobal.inc                      ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/megafunctions/aglobal.inc  ;
+; f74161.bdf                       ; yes             ; Megafunction                       ; c:/altera/81/quartus/libraries/others/maxplus2/f74161.bdf ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -172,27 +173,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 121   ;
+; Estimated Total logic elements              ; 122   ;
 ;                                             ;       ;
-; Total combinational functions               ; 121   ;
+; Total combinational functions               ; 122   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 94    ;
-;     -- 3 input functions                    ; 17    ;
+;     -- 4 input functions                    ; 81    ;
+;     -- 3 input functions                    ; 31    ;
 ;     -- <=2 input functions                  ; 10    ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 121   ;
+;     -- normal mode                          ; 122   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;                                             ;       ;
-; Total registers                             ; 77    ;
-;     -- Dedicated logic registers            ; 77    ;
+; Total registers                             ; 85    ;
+;     -- Dedicated logic registers            ; 85    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 58    ;
+; I/O pins                                    ; 68    ;
 ; Maximum fan-out node                        ; CLR   ;
 ; Maximum fan-out                             ; 77    ;
-; Total fan-out                               ; 737   ;
-; Average fan-out                             ; 2.88  ;
+; Total fan-out                               ; 752   ;
+; Average fan-out                             ; 2.73  ;
 +---------------------------------------------+-------+
 
 
@@ -201,28 +202,21 @@ applicable agreement for further details.
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                           ; Library Name ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
-; |final_design                  ; 121 (9)           ; 77 (0)       ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |final_design                                                 ; work         ;
-;    |2-4:selB|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|2-4:selB                                        ; work         ;
-;    |3-8_bus:inst72|            ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3-8_bus:inst72                                  ; work         ;
-;       |3-8:inst|               ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3-8_bus:inst72|3-8:inst                         ; work         ;
-;          |74138:inst|          ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3-8_bus:inst72|3-8:inst|74138:inst              ; work         ;
-;    |3_state_1_gate_bus:B|      ; 18 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_1_gate_bus:B                            ; work         ;
-;       |3_state_1_gate:inst|    ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_1_gate_bus:B|3_state_1_gate:inst        ; work         ;
-;    |3_state_1_gate_bus:inst64| ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_1_gate_bus:inst64                       ; work         ;
-;       |3_state_1_gate:inst|    ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_1_gate_bus:inst64|3_state_1_gate:inst   ; work         ;
-;    |3_state_2_gate_bus:inst29| ; 2 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_2_gate_bus:inst29                       ; work         ;
-;       |3_state_2_gate:inst|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_2_gate_bus:inst29|3_state_2_gate:inst   ; work         ;
-;    |alu_bus:inst8|             ; 55 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8                                   ; work         ;
-;       |alu:inst|               ; 55 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst                          ; work         ;
-;          |74181:inst3|         ; 22 (22)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst|74181:inst3              ; work         ;
-;          |74181:inst|          ; 27 (27)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst|74181:inst               ; work         ;
-;          |74182:inst2|         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst|74182:inst2              ; work         ;
-;    |counter_bus:uPC|           ; 21 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC                                 ; work         ;
-;       |uPC:inst|               ; 21 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst                        ; work         ;
+; |final_design                  ; 122 (63)          ; 85 (0)       ; 0           ; 0            ; 0       ; 0         ; 68   ; 0            ; |final_design                                                 ; work         ;
+;    |2-4:inst88|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|2-4:inst88                                      ; work         ;
+;    |3_state_1_gate_bus:inst94| ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_1_gate_bus:inst94                       ; work         ;
+;       |3_state_1_gate:inst|    ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|3_state_1_gate_bus:inst94|3_state_1_gate:inst   ; work         ;
+;    |alu_bus:inst8|             ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8                                   ; work         ;
+;       |alu:inst|               ; 27 (6)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst                          ; work         ;
+;          |74181:inst3|         ; 13 (13)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst|74181:inst3              ; work         ;
+;          |74181:inst|          ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst|74181:inst               ; work         ;
+;          |74182:inst2|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|alu_bus:inst8|alu:inst|74182:inst2              ; work         ;
+;    |counter_bus:uPC|           ; 22 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC                                 ; work         ;
+;       |uPC:inst|               ; 22 (0)            ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst                        ; work         ;
 ;          |74161:inst1|         ; 14 (0)            ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst1            ; work         ;
 ;             |f74161:sub|       ; 14 (14)           ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub ; work         ;
-;          |74161:inst|          ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst             ; work         ;
-;             |f74161:sub|       ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst|f74161:sub  ; work         ;
+;          |74161:inst|          ; 8 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst             ; work         ;
+;             |f74161:sub|       ; 8 (8)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|counter_bus:uPC|uPC:inst|74161:inst|f74161:sub  ; work         ;
 ;    |my_start:inst|             ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|my_start:inst                                   ; work         ;
 ;    |reg8:SIG|                  ; 0 (0)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8:SIG                                        ; work         ;
 ;    |reg8_bus:I_R|              ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8_bus:I_R                                    ; work         ;
@@ -241,6 +235,8 @@ applicable agreement for further details.
 ;       |reg8:inst1|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8_bus:R2|reg8:inst1                          ; work         ;
 ;    |reg8_bus:R3|               ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8_bus:R3                                     ; work         ;
 ;       |reg8:inst1|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8_bus:R3|reg8:inst1                          ; work         ;
+;    |reg8_bus:inst9|            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8_bus:inst9                                  ; work         ;
+;       |reg8:inst1|             ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |final_design|reg8_bus:inst9|reg8:inst1                       ; work         ;
 +--------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -250,7 +246,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 77    ;
+; Total registers                              ; 85    ;
 ; Number of registers using Synchronous Clear  ; 4     ;
 ; Number of registers using Synchronous Load   ; 4     ;
 ; Number of registers using Asynchronous Clear ; 77    ;
@@ -258,6 +254,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; No         ; |final_design|3_state_1_gate_bus:B~1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------+
 
 
 +----------------------------------------------------------------------------------+
@@ -294,7 +299,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed May 25 02:08:58 2022
+    Info: Processing started: Thu May 26 21:14:53 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off final_design -c final_design
 Info: Found 1 design units, including 1 entities, in source file final_design.bdf
     Info: Found entity 1: final_design
@@ -365,36 +370,46 @@ Info: Elaborated megafunction instantiation "counter_bus:uPC|uPC:inst|74161:inst
 Info: Elaborating entity "74161" for hierarchy "counter_bus:uPC|uPC:inst|74161:inst1"
 Info: Elaborated megafunction instantiation "counter_bus:uPC|uPC:inst|74161:inst1"
 Info: Elaborating entity "selector_halfa" for hierarchy "selector_halfa:inst46"
-Info: Ignored 30 buffer(s)
+Info: Ignored 38 buffer(s)
     Info: Ignored 8 CARRY buffer(s)
-    Info: Ignored 22 SOFT buffer(s)
+    Info: Ignored 30 SOFT buffer(s)
 Warning: Tri-state node(s) do not directly drive top-level pin(s)
     Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|inst6" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|45" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|44" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|43" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|51" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|45" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|44" into a selector
-    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|43" into a selector
-Warning: Tri-state node(s) do not directly drive top-level pin(s)
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst17" to the node "alu_bus:inst8|alu:inst|74181:inst3|51" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst15" to the node "alu_bus:inst8|alu:inst|74181:inst3|44" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst11" to the node "alu_bus:inst8|alu:inst|74181:inst|44" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst10" to the node "alu_bus:inst8|alu:inst|74181:inst|43" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst13" to the node "alu_bus:inst8|alu:inst|74181:inst|51" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst12" to the node "alu_bus:inst8|alu:inst|74181:inst|45" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst14" to the node "alu_bus:inst8|alu:inst|74181:inst3|43" into an OR gate
-    Warning: Converted the fan-out from the tri-state buffer "3_state_1_gate_bus:inst64|3_state_1_gate:inst|inst16" to the node "alu_bus:inst8|alu:inst|74181:inst3|45" into an OR gate
-Info: Implemented 246 device resources after synthesis - the final resource count might be different
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|19" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|14" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|9" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|24" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|19" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|14" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|9" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|inst6" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|19" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|14" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst3|9" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|24" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|19" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|14" into a selector
+    Warning: Converted tri-state node feeding "alu_bus:inst8|alu:inst|74181:inst|9" into a selector
+Warning: Always-enabled tri-state buffer(s) removed
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst16" to the node "reg8_bus:MDR|reg8:inst1|inst8" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst15" to the node "reg8_bus:MDR|reg8:inst1|inst7" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst14" to the node "reg8_bus:MDR|reg8:inst1|inst5" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst13" to the node "reg8_bus:MDR|reg8:inst1|inst4" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst12" to the node "reg8_bus:MDR|reg8:inst1|inst3" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst11" to the node "reg8_bus:MDR|reg8:inst1|inst" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst10" to the node "reg8_bus:MDR|reg8:inst1|inst6" into a wire
+    Warning: Converted the fanout from the always-enabled tri-state buffer "3_state_1_gate_bus:inst94|3_state_1_gate:inst|inst17" to the node "reg8_bus:MDR|reg8:inst1|inst9" into a wire
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "uRD" is stuck at GND
+Info: Implemented 256 device resources after synthesis - the final resource count might be different
     Info: Implemented 26 input pins
-    Info: Implemented 24 output pins
+    Info: Implemented 34 output pins
     Info: Implemented 8 bidirectional pins
     Info: Implemented 188 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 264 megabytes
-    Info: Processing ended: Wed May 25 02:09:00 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 196 megabytes
+    Info: Processing ended: Thu May 26 21:15:07 2022
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:04
 
 
