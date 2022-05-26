@@ -1,0 +1,5 @@
+LD R0,6
+ST R0,7
+HALT
+DATA
+56
