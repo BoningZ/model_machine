@@ -11,15 +11,16 @@ int main(){
 	freopen("INS.txt","r",stdin);
 	freopen("INS.csv","w",stdout);
 	printf("RAM_ADDR,DAT\n");
-	mp["LD"]=1;
+	mp["LD"]=1; 
 	mp["ST"]=2;
 	mp["HALT"]=3;
 	mp["JX"]=4;
 	mp["ADD"]=5;
 	mp["JMP"]=6;
 	mp["INC"]=7;
-	mp["DATA_BU"]=8;
-	mp["DATA_O"]=9;
+	mp["INC+"]=10;
+	mp["DATA_BU"]=11;
+	mp["DATA_O"]=12;
 	mp["C"]=0;
 	mp["V"]=1;
 	mp["N"]=2;
@@ -47,6 +48,7 @@ int main(){
 			case 4:
 				cin>>stt;
 				cin>>ad;
+				if(ad<0)ad+=256;
 				printf("%x\n%x,",mp[stt]<<2,s++);
 				printf("*%x%x\n",ad>>4,ad%16);
 				break;
@@ -57,6 +59,7 @@ int main(){
 				break;
 			case 6:
 				cin>>ad;
+				if(ad<0)ad+=256;
 				printf("0\n%x,",s++);
 				printf("*%x%x\n",ad>>4,ad%16);
 				break;
@@ -65,8 +68,14 @@ int main(){
 				sscanf(st,"R%d",&r);
 				printf("%x\n",r);
 				break;
-			case 9:flag=2;break;
-			case 8:flag=1;break;
+			case 12:flag=2;break;
+			case 11:flag=1;break;
+			case 10:
+				cin>>st;
+				sscanf(st,"R%d",&r);
+				printf("%x\n",r);
+				break;
+				
 		}
 		if(flag){printf("0\n");break;}
 	}

@@ -46,7 +46,6 @@ reg8_bus:R2|reg8:inst1
 reg8_bus:R3|reg8:inst1
 reg8_bus:MDR|reg8:inst1
 reg8_bus:MAR|reg8:inst1
-reg8_bus:inst9|reg8:inst1
 }
 # macro_sequence
 
@@ -392,7 +391,6 @@ reg8_bus:R2
 reg8_bus:R3
 reg8_bus:MDR
 reg8_bus:MAR
-reg8_bus:inst9
 }
 # macro_sequence
 
@@ -433,26 +431,6 @@ AUTO
 }
 # hierarchies {
 alu_bus:inst8|alu:inst
-}
-# macro_sequence
-
-# end
-# entity
-final_design
-# storage
-db|final_design.(0).cnf
-db|final_design.(0).cnf
-# case_insensitive
-# source_file
-final_design.bdf
-c9ea312adfd95ff3e079d58fa8b3a42e
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -705,6 +683,26 @@ ba79644cade9dcbd5df4af72a9b02986
 }
 # hierarchies {
 counter_bus:uPC|uPC:inst|74161:inst1
+}
+# macro_sequence
+
+# end
+# entity
+final_design
+# storage
+db|final_design.(0).cnf
+db|final_design.(0).cnf
+# case_insensitive
+# source_file
+final_design.bdf
+43b115dc6858acd57594b213088931d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

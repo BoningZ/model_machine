@@ -131,3 +131,5 @@ set_location_assignment PIN_149 -to TEST6
 set_location_assignment PIN_150 -to TEST7
 set_location_assignment PIN_151 -to XINHAO
 set_location_assignment PIN_152 -to XINHAO27
+set_location_assignment PIN_99 -to uIR_7_Carry
+set_global_assignment -name MISC_FILE "C:/Users/lenovo/Desktop/大二下/计组课设/计组课设/final_design/final_design.dpf"

@@ -5,8 +5,8 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.933 ns
-From           : uIR_13
+Actual Time    : 9.666 ns
+From           : uIR_15
 To             : reg8:SIG|inst9
 From Clock     : --
 To Clock       : uIR_6_expR
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.591 ns
-From           : reg8_bus:inst9|reg8:inst1|inst7
-To             : TEST5
+Actual Time    : 15.971 ns
+From           : counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110
+To             : AdROM7
 From Clock     : START_CP
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.495 ns
+Actual Time    : 13.945 ns
 From           : uIR4_RAM_WRITE
-To             : AdRAM_2
+To             : AdRAM_1
 From Clock     : --
 To Clock       : --
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 4.028 ns
-From           : uIR22
-To             : counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|99
+Actual Time    : 3.533 ns
+From           : uIR23
+To             : counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|110
 From Clock     : --
 To Clock       : START_CP
 Failed Paths   : 0
@@ -45,49 +45,39 @@ Failed Paths   : 0
 Type           : Clock Setup: 'uIR_3_HALT'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 73.04 MHz ( period = 13.691 ns )
-From           : reg8_bus:R0|reg8:inst1|inst6
+Actual Time    : 78.96 MHz ( period = 12.664 ns )
+From           : reg8_bus:R1|reg8:inst1|inst6
 To             : reg8:SIG|inst9
 From Clock     : uIR_3_HALT
 To Clock       : uIR_3_HALT
 Failed Paths   : 0
 
-Type           : Clock Setup: 'CONTINUOUS_PULSE'
-Slack          : N/A
-Required Time  : None
-Actual Time    : 73.04 MHz ( period = 13.691 ns )
-From           : reg8_bus:R0|reg8:inst1|inst6
-To             : reg8:SIG|inst9
-From Clock     : CONTINUOUS_PULSE
-To Clock       : CONTINUOUS_PULSE
-Failed Paths   : 0
-
 Type           : Clock Setup: 'START_CP'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 73.04 MHz ( period = 13.691 ns )
-From           : reg8_bus:R0|reg8:inst1|inst6
+Actual Time    : 78.96 MHz ( period = 12.664 ns )
+From           : reg8_bus:R1|reg8:inst1|inst6
 To             : reg8:SIG|inst9
 From Clock     : START_CP
 To Clock       : START_CP
 Failed Paths   : 0
 
-Type           : Clock Setup: 'uIR_11'
+Type           : Clock Setup: 'CONTINUOUS_PULSE'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 89.66 MHz ( period = 11.153 ns )
-From           : reg8_bus:R0|reg8:inst1|inst6
-To             : reg8_bus:I_R|reg8:inst1|inst4
-From Clock     : uIR_11
-To Clock       : uIR_11
+Actual Time    : 78.96 MHz ( period = 12.664 ns )
+From           : reg8_bus:R1|reg8:inst1|inst6
+To             : reg8:SIG|inst9
+From Clock     : CONTINUOUS_PULSE
+To Clock       : CONTINUOUS_PULSE
 Failed Paths   : 0
 
 Type           : Clock Setup: 'uIR_10'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 89.66 MHz ( period = 11.153 ns )
-From           : reg8_bus:R0|reg8:inst1|inst6
-To             : reg8_bus:I_R|reg8:inst1|inst4
+Actual Time    : 81.73 MHz ( period = 12.236 ns )
+From           : reg8_bus:R1|reg8:inst1|inst6
+To             : reg8_bus:I_R|reg8:inst1|inst9
 From Clock     : uIR_10
 To Clock       : uIR_10
 Failed Paths   : 0
@@ -95,82 +85,92 @@ Failed Paths   : 0
 Type           : Clock Setup: 'uIR_9'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 89.66 MHz ( period = 11.153 ns )
-From           : reg8_bus:R0|reg8:inst1|inst6
-To             : reg8_bus:I_R|reg8:inst1|inst4
+Actual Time    : 81.73 MHz ( period = 12.236 ns )
+From           : reg8_bus:R1|reg8:inst1|inst6
+To             : reg8_bus:I_R|reg8:inst1|inst9
 From Clock     : uIR_9
 To Clock       : uIR_9
+Failed Paths   : 0
+
+Type           : Clock Setup: 'uIR_11'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 81.73 MHz ( period = 12.236 ns )
+From           : reg8_bus:R1|reg8:inst1|inst6
+To             : reg8_bus:I_R|reg8:inst1|inst9
+From Clock     : uIR_11
+To Clock       : uIR_11
 Failed Paths   : 0
 
 Type           : Clock Setup: 'uIR_6_expR'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 121.14 MHz ( period = 8.255 ns )
-From           : reg8:SIG|inst5
+Actual Time    : 124.98 MHz ( period = 8.001 ns )
+From           : reg8:SIG|inst7
 To             : reg8:SIG|inst9
 From Clock     : uIR_6_expR
 To Clock       : uIR_6_expR
 Failed Paths   : 0
 
-Type           : Clock Hold: 'START_CP'
-Slack          : Not operational: Clock Skew > Data Delay
-Required Time  : None
-Actual Time    : N/A
-From           : reg8:SIG|inst7
-To             : reg8_bus:I_R|reg8:inst1|inst9
-From Clock     : START_CP
-To Clock       : START_CP
-Failed Paths   : 108
-
 Type           : Clock Hold: 'CONTINUOUS_PULSE'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : reg8:SIG|inst7
-To             : reg8_bus:I_R|reg8:inst1|inst9
+From           : reg8_bus:I_R|reg8:inst1|inst7
+To             : counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87
 From Clock     : CONTINUOUS_PULSE
 To Clock       : CONTINUOUS_PULSE
-Failed Paths   : 108
+Failed Paths   : 14
+
+Type           : Clock Hold: 'START_CP'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : reg8_bus:I_R|reg8:inst1|inst7
+To             : counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87
+From Clock     : START_CP
+To Clock       : START_CP
+Failed Paths   : 14
 
 Type           : Clock Hold: 'uIR_3_HALT'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : reg8:SIG|inst7
-To             : reg8_bus:I_R|reg8:inst1|inst9
+From           : reg8_bus:I_R|reg8:inst1|inst7
+To             : counter_bus:uPC|uPC:inst|74161:inst1|f74161:sub|87
 From Clock     : uIR_3_HALT
 To Clock       : uIR_3_HALT
-Failed Paths   : 108
-
-Type           : Clock Hold: 'uIR_9'
-Slack          : Not operational: Clock Skew > Data Delay
-Required Time  : None
-Actual Time    : N/A
-From           : reg8_bus:I_R|reg8:inst1|inst4
-To             : reg8_bus:I_R|reg8:inst1|inst9
-From Clock     : uIR_9
-To Clock       : uIR_9
-Failed Paths   : 17
-
-Type           : Clock Hold: 'uIR_10'
-Slack          : Not operational: Clock Skew > Data Delay
-Required Time  : None
-Actual Time    : N/A
-From           : reg8_bus:I_R|reg8:inst1|inst4
-To             : reg8_bus:I_R|reg8:inst1|inst9
-From Clock     : uIR_10
-To Clock       : uIR_10
-Failed Paths   : 17
+Failed Paths   : 14
 
 Type           : Clock Hold: 'uIR_11'
 Slack          : Not operational: Clock Skew > Data Delay
 Required Time  : None
 Actual Time    : N/A
-From           : reg8_bus:I_R|reg8:inst1|inst4
-To             : reg8_bus:I_R|reg8:inst1|inst9
+From           : reg8_bus:I_R|reg8:inst1|inst6
+To             : reg8_bus:I_R|reg8:inst1|inst8
 From Clock     : uIR_11
 To Clock       : uIR_11
-Failed Paths   : 17
+Failed Paths   : 1
+
+Type           : Clock Hold: 'uIR_9'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : reg8_bus:I_R|reg8:inst1|inst6
+To             : reg8_bus:I_R|reg8:inst1|inst8
+From Clock     : uIR_9
+To Clock       : uIR_9
+Failed Paths   : 1
+
+Type           : Clock Hold: 'uIR_10'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : reg8_bus:I_R|reg8:inst1|inst6
+To             : reg8_bus:I_R|reg8:inst1|inst8
+From Clock     : uIR_10
+To Clock       : uIR_10
+Failed Paths   : 1
 
 Type           : Total number of failed paths
 Slack          : 
@@ -180,7 +180,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 375
+Failed Paths   : 45
 
 --------------------------------------------------------------------------------------
 

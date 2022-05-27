@@ -209,17 +209,17 @@ GND*                         : 138       :        :                   :         
 GND*                         : 139       :        :                   :         : 3         :                
 GND                          : 140       : gnd    :                   :         :           :                
 GND*                         : 141       :        :                   :         : 3         :                
-TEST0                        : 142       : output : 3.3-V LVTTL       :         : 3         : Y              
-TEST1                        : 143       : output : 3.3-V LVTTL       :         : 3         : Y              
-TEST2                        : 144       : output : 3.3-V LVTTL       :         : 3         : Y              
-TEST3                        : 145       : output : 3.3-V LVTTL       :         : 3         : Y              
-TEST4                        : 146       : output : 3.3-V LVTTL       :         : 3         : Y              
-TEST5                        : 147       : output : 3.3-V LVTTL       :         : 3         : Y              
+GND*                         : 142       :        :                   :         : 3         :                
+GND*                         : 143       :        :                   :         : 3         :                
+GND*                         : 144       :        :                   :         : 3         :                
+GND*                         : 145       :        :                   :         : 3         :                
+GND*                         : 146       :        :                   :         : 3         :                
+GND*                         : 147       :        :                   :         : 3         :                
 VCCIO3                       : 148       : power  :                   : 3.3V    : 3         :                
-TEST6                        : 149       : output : 3.3-V LVTTL       :         : 3         : Y              
-TEST7                        : 150       : output : 3.3-V LVTTL       :         : 3         : Y              
-XINHAO                       : 151       : output : 3.3-V LVTTL       :         : 3         : Y              
-XINHAO27                     : 152       : output : 3.3-V LVTTL       :         : 3         : Y              
+GND*                         : 149       :        :                   :         : 3         :                
+GND*                         : 150       :        :                   :         : 3         :                
+GND*                         : 151       :        :                   :         : 3         :                
+GND*                         : 152       :        :                   :         : 3         :                
 GND                          : 153       : gnd    :                   :         :           :                
 GND_PLL2                     : 154       : gnd    :                   :         :           :                
 VCCD_PLL2                    : 155       : power  :                   : 1.2V    :           :                

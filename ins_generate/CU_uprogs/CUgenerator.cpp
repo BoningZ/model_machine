@@ -16,13 +16,14 @@ int main(){
 	mp["QJP"]="02*,02*,";
 	mp["MDR->Ri"]="80*,00*,";
 	mp["MDR->MAR"]="8c*,00*,";
-	mp["Ri->MDR"]="4a*,00*,";
+	mp["Ri->MDR"]="1a*,00*,";
 	mp["HALT"]="02*,08*,";
 	mp["XJP+PC->PC"]="fe*,00*,";
 	mp["Ri+Rj->Rj"]="50*,40*,";
 	mp["MDR+PC->PC"]="be*,00*,";
-	mp["Ri+1->Ri"]="41*,00*,";
+	mp["Ri+1->Ri"]="11*,00*,";
 	mp["MDR->RAM"]="82*,10*,";
+	mp["Ri+1->Ri+"]="11*,40*,";
 	mp["."]="---,---";
 	freopen("CU.txt","r",stdin);
 	freopen("CU.csv","w",stdout);
