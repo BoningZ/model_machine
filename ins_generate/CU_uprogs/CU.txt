@@ -14,8 +14,6 @@ JP
 .
 .
 .
-RAM->MDR
-MDR->IR
 PC->MAR
 PC+1->PC
 RAM->MDR
@@ -30,8 +28,8 @@ QJP
 .
 .
 .
-RAM->MDR
-MDR->IR
+.
+.
 PC->MAR
 PC+1->PC
 RAM->MDR
@@ -39,6 +37,8 @@ MDR->MAR
 Ri->MDR
 MDR->RAM
 QJP
+.
+.
 .
 .
 .
@@ -62,8 +62,6 @@ HALT
 .
 .
 .
-RAM->MDR
-MDR->IR
 PC->MAR
 RAM->MDR
 XJP+PC->PC
@@ -78,10 +76,12 @@ QJP
 .
 .
 .
-RAM->MDR
-MDR->IR
+.
+.
 Ri+Rj->Rj
 QJP
+.
+.
 .
 .
 .
@@ -110,8 +110,6 @@ QJP
 .
 .
 .
-RAM->MDR
-MDR->IR
 Ri+1->Ri
 QJP
 .
@@ -158,7 +156,7 @@ QJP
 .
 .
 .
-RAM->MDR
-MDR->IR
+.
+.
 Ri+1->Ri+
 QJP

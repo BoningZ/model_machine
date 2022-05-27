@@ -14,9 +14,7 @@ JP
 .
 .
 .
-RAM->MDR//LD 10 取数
-MDR->IR
-PC->MAR
+PC->MAR//LD 10 取数
 PC+1->PC
 RAM->MDR
 MDR->MAR
@@ -30,15 +28,17 @@ QJP
 .
 .
 .
-RAM->MDR//ST 20 存数
-MDR->IR
-PC->MAR
+.
+.
+PC->MAR//ST 20 存数
 PC+1->PC
 RAM->MDR
 MDR->MAR
 Ri->MDR
 MDR->RAM
 QJP
+.
+.
 .
 .
 .
@@ -62,9 +62,7 @@ HALT//halt 30 停机
 .
 .
 .
-RAM->MDR//jx 40 条件相对跳转
-MDR->IR
-PC->MAR
+PC->MAR//jx 40 条件相对跳转
 RAM->MDR
 XJP+PC->PC
 QJP
@@ -78,10 +76,12 @@ QJP
 .
 .
 .
-RAM->MDR//add 50 加法
-MDR->IR
-Ri+Rj->Rj
+.
+.
+Ri+Rj->Rj//add 50 加法
 QJP
+.
+.
 .
 .
 .
@@ -110,9 +110,7 @@ QJP
 .
 .
 .
-RAM->MDR//inc 70 递增
-MDR->IR
-Ri+1->Ri
+Ri+1->Ri//inc 70 递增
 QJP
 .
 .
@@ -158,7 +156,7 @@ QJP
 .
 .
 .
-RAM->MDR//inc+ A0 带状态位+1
-MDR->IR
-Ri+1->Ri+
+.
+.
+Ri+1->Ri+//inc+ A0 带状态位+1
 QJP
