@@ -138,3 +138,10 @@ set_global_assignment -name BDF_FILE BUSed/mdr_bus.bdf
 set_global_assignment -name BDF_FILE BUSed/reg8_EN_bus.bdf
 set_global_assignment -name BDF_FILE BUSed/alu_sta_bused.bdf
 set_global_assignment -name BDF_FILE BUSed/zero2_bus.bdf
+set_global_assignment -name BDF_FILE "333/2(2-4).bdf"
+set_global_assignment -name BDF_FILE "BUSed/2(2-4)_bus.bdf"
+set_global_assignment -name BDF_FILE "BUSed/2+2-4+4.bdf"
+set_global_assignment -name BDF_FILE "333/2+2-4+4.bdf"
+set_global_assignment -name BDF_FILE "BUSed/2+2-4+4_bus.bdf"
+set_global_assignment -name BDF_FILE "333/22-44.bdf"
+set_global_assignment -name BDF_FILE "BUSed/22-44_bus.bdf"

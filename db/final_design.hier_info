@@ -19,10 +19,10 @@ uIR_10 => 3-8_bus:sel_destination.B
 uIR_11 => 3-8_bus:sel_destination.C
 uIR8_C0 => alu_sta_bused:ALU.C0
 uIR_6_expR => inst10.IN0
-uIR_12 => 2-4:selA.D0
-uIR_13 => 2-4:selA.D1
-uIR_14 => 2-4:selB.D0
-uIR_15 => 2-4:selB.D1
+uIR_12 => 22-44_bus:sel_source.A1
+uIR_13 => 22-44_bus:sel_source.B1
+uIR_14 => 22-44_bus:sel_source.A2
+uIR_15 => 22-44_bus:sel_source.B2
 uIR5_RAM_READ => mdr_bus:MDR.EN_read
 uIR5_RAM_READ => inst22.IN0
 uIR4_RAM_WRITE => mdr_bus:MDR.EN_write
@@ -883,17 +883,51 @@ Q4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 D4 => inst5.DATAIN
 
 
-|final_design|2-4:selA
-Y0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-D0 => inst1.IN0
-D0 => inst3.IN0
-D0 => inst5.IN1
-D1 => inst.IN0
-D1 => inst4.IN0
-D1 => inst5.IN0
-Y1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Y2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Y3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+|final_design|22-44_bus:sel_source
+Y[0] <= 22-44:inst1.Y10
+Y[1] <= 22-44:inst1.Y11
+Y[2] <= 22-44:inst1.Y12
+Y[3] <= 22-44:inst1.Y13
+Y[4] <= 22-44:inst1.Y20
+Y[5] <= 22-44:inst1.Y21
+Y[6] <= 22-44:inst1.Y22
+Y[7] <= 22-44:inst1.Y23
+A1 => 22-44:inst1.A1
+B1 => 22-44:inst1.B1
+A2 => 22-44:inst1.A2
+B2 => 22-44:inst1.B2
+
+
+|final_design|22-44_bus:sel_source|22-44:inst1
+Y10 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 74139:inst.A1
+A2 => 74139:inst.A2
+B1 => 74139:inst.B1
+B2 => 74139:inst.B2
+Y11 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+Y12 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Y13 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+Y20 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Y21 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Y22 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Y23 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|final_design|22-44_bus:sel_source|22-44:inst1|74139:inst
+Y10N <= 33.DB_MAX_OUTPUT_PORT_TYPE
+G1N => 7.IN0
+B1 => 11.IN0
+A1 => 8.IN0
+Y11N <= 34.DB_MAX_OUTPUT_PORT_TYPE
+Y12N <= 35.DB_MAX_OUTPUT_PORT_TYPE
+Y13N <= 36.DB_MAX_OUTPUT_PORT_TYPE
+Y20N <= 37.DB_MAX_OUTPUT_PORT_TYPE
+G2N => 12.IN0
+B2 => 16.IN0
+A2 => 13.IN0
+Y21N <= 38.DB_MAX_OUTPUT_PORT_TYPE
+Y22N <= 39.DB_MAX_OUTPUT_PORT_TYPE
+Y23N <= 40.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |final_design|reg_group_bus:reg_group
@@ -1886,19 +1920,6 @@ A0 => inst28.IN0
 
 
 |final_design|reg_group_bus:reg_group|2-4:inst7
-Y0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-D0 => inst1.IN0
-D0 => inst3.IN0
-D0 => inst5.IN1
-D1 => inst.IN0
-D1 => inst4.IN0
-D1 => inst5.IN0
-Y1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
-Y2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Y3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|final_design|2-4:selB
 Y0 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 D0 => inst1.IN0
 D0 => inst3.IN0

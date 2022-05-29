@@ -754,11 +754,9 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-2-4:selA
 reg_group_bus:reg_group|2-4:inst6
 reg_group_bus:reg_group|2-4:inst88
 reg_group_bus:reg_group|2-4:inst7
-2-4:selB
 2-4:C/V/N/Z
 }
 # macro_sequence
@@ -792,7 +790,7 @@ db|final_design.(0).cnf
 # case_insensitive
 # source_file
 final_design.bdf
-6937793f85d887d1737b25cae956583
+6416b41db9ff5db957c3581364fdde20
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -800,6 +798,66 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+22-44_bus
+# storage
+db|final_design.(30).cnf
+db|final_design.(30).cnf
+# case_insensitive
+# source_file
+BUSed|22-44_bus.bdf
+c27344c9b7f01c85e45cb2e56ebc7a4f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+22-44_bus:sel_source
+}
+# macro_sequence
+
+# end
+# entity
+22-44
+# storage
+db|final_design.(31).cnf
+db|final_design.(31).cnf
+# case_insensitive
+# source_file
+333|22-44.bdf
+5b98b15bc8294520a36228d2a7acedfd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+22-44_bus:sel_source|22-44:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74139
+# storage
+db|final_design.(32).cnf
+db|final_design.(32).cnf
+# case_insensitive
+# source_file
+d:|quartus|quartus|libraries|others|maxplus2|74139.bdf
+4ab546d7302e8fe86bee1b6b8b90e8c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+22-44_bus:sel_source|22-44:inst1|74139:inst
 }
 # macro_sequence
 

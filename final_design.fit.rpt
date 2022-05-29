@@ -1,5 +1,5 @@
 Fitter report for final_design
-Mon May 30 00:38:00 2022
+Mon May 30 01:13:34 2022
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -65,7 +65,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Fitter Summary                                                               ;
 +------------------------------------+-----------------------------------------+
-; Fitter Status                      ; Successful - Mon May 30 00:38:00 2022   ;
+; Fitter Status                      ; Successful - Mon May 30 01:13:34 2022   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; final_design                            ;
 ; Top-level Entity Name              ; final_design                            ;
@@ -1272,37 +1272,35 @@ This will disable optimization of problematic paths and expose them for further 
 ; LABs with Chains - Fit Attempt 1                                 ; 0                   ;
 ; LABs with Multiple Chains - Fit Attempt 1                        ; 0                   ;
 ; Time - Fit Attempt 1                                             ; 0                   ;
-; Time in tsm_tan.dll - Fit Attempt 1                              ; 0.016               ;
 +------------------------------------------------------------------+---------------------+
 
 
-+----------------------------------------------+
-; Advanced Data - Placement                    ;
-+-------------------------------------+--------+
-; Name                                ; Value  ;
-+-------------------------------------+--------+
-; Auto Fit Point 2 - Fit Attempt 1    ; ff     ;
-; Early Wire Use - Fit Attempt 1      ; 1      ;
-; Early Slack - Fit Attempt 1         ; -15710 ;
-; Auto Fit Point 5 - Fit Attempt 1    ; ff     ;
-; Mid Wire Use - Fit Attempt 1        ; 2      ;
-; Mid Slack - Fit Attempt 1           ; -14759 ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff     ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff     ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff     ;
-; Auto Fit Point 5 - Fit Attempt 1    ; ff     ;
-; Mid Wire Use - Fit Attempt 1        ; 2      ;
-; Mid Slack - Fit Attempt 1           ; -14759 ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff     ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff     ;
-; Auto Fit Point 6 - Fit Attempt 1    ; ff     ;
-; Late Wire Use - Fit Attempt 1       ; 2      ;
-; Late Slack - Fit Attempt 1          ; -14759 ;
-; Peak Regional Wire - Fit Attempt 1  ; 0.000  ;
-; Auto Fit Point 7 - Fit Attempt 1    ; ff     ;
-; Time - Fit Attempt 1                ; 0      ;
-; Time in tsm_tan.dll - Fit Attempt 1 ; 0.016  ;
-+-------------------------------------+--------+
++---------------------------------------------+
+; Advanced Data - Placement                   ;
++------------------------------------+--------+
+; Name                               ; Value  ;
++------------------------------------+--------+
+; Auto Fit Point 2 - Fit Attempt 1   ; ff     ;
+; Early Wire Use - Fit Attempt 1     ; 1      ;
+; Early Slack - Fit Attempt 1        ; -15710 ;
+; Auto Fit Point 5 - Fit Attempt 1   ; ff     ;
+; Mid Wire Use - Fit Attempt 1       ; 2      ;
+; Mid Slack - Fit Attempt 1          ; -14759 ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
+; Auto Fit Point 5 - Fit Attempt 1   ; ff     ;
+; Mid Wire Use - Fit Attempt 1       ; 2      ;
+; Mid Slack - Fit Attempt 1          ; -14759 ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
+; Auto Fit Point 6 - Fit Attempt 1   ; ff     ;
+; Late Wire Use - Fit Attempt 1      ; 2      ;
+; Late Slack - Fit Attempt 1         ; -14759 ;
+; Peak Regional Wire - Fit Attempt 1 ; 0.000  ;
+; Auto Fit Point 7 - Fit Attempt 1   ; ff     ;
+; Time - Fit Attempt 1               ; 0      ;
++------------------------------------+--------+
 
 
 +---------------------------------------------------+
@@ -1327,7 +1325,7 @@ This will disable optimization of problematic paths and expose them for further 
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Mon May 30 00:37:58 2022
+    Info: Processing started: Mon May 30 01:13:33 2022
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off final_design -c final_design
 Info: Selected device EP2C8Q208C7 for design "final_design"
 Info: Low junction temperature is 0 degrees C
@@ -1476,8 +1474,8 @@ Info: Following groups of pins have the same output enable
 Warning: The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info: Quartus II Fitter was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 299 megabytes
-    Info: Processing ended: Mon May 30 00:38:00 2022
+    Info: Processing ended: Mon May 30 01:13:35 2022
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
