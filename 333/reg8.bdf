@@ -70,7 +70,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 224 -64 392 -48)
+	(rect 224 -40 392 -24)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CP" (rect 5 0 20 12)(font "Arial" ))
 	(pt 168 8)
@@ -166,7 +166,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 224 -88 392 -72)
+	(rect 224 -64 392 -48)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "CLR" (rect 5 0 27 12)(font "Arial" ))
 	(pt 168 8)
@@ -773,10 +773,6 @@ applicable agreement for further details.
 	(pt 616 824)
 )
 (connector
-	(pt 392 -56)
-	(pt 432 -56)
-)
-(connector
 	(pt 432 720)
 	(pt 472 720)
 )
@@ -831,14 +827,6 @@ applicable agreement for further details.
 (connector
 	(pt 472 8)
 	(pt 432 8)
-)
-(connector
-	(pt 432 -56)
-	(pt 432 8)
-)
-(connector
-	(pt 432 8)
-	(pt 432 120)
 )
 (connector
 	(pt 448 544)
@@ -969,11 +957,23 @@ applicable agreement for further details.
 	(pt 504 568)
 )
 (connector
-	(pt 448 -80)
-	(pt 392 -80)
+	(pt 432 -32)
+	(pt 392 -32)
 )
 (connector
-	(pt 448 -80)
+	(pt 432 -32)
+	(pt 432 8)
+)
+(connector
+	(pt 432 8)
+	(pt 432 120)
+)
+(connector
+	(pt 448 -56)
+	(pt 392 -56)
+)
+(connector
+	(pt 448 -56)
 	(pt 448 -40)
 )
 (connector

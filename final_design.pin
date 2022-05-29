@@ -100,7 +100,7 @@ VCCIO1                       : 29        : power  :                   : 3.3V    
 V_overflow                   : 30        : output : 3.3-V LVTTL       :         : 1         : Y              
 N_negative                   : 31        : output : 3.3-V LVTTL       :         : 1         : Y              
 VCCINT                       : 32        : power  :                   : 1.2V    :           :                
-C_extra                      : 33        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : 33        :        :                   :         : 1         :                
 GND*                         : 34        :        :                   :         : 1         :                
 GND*                         : 35        :        :                   :         : 1         :                
 GND                          : 36        : gnd    :                   :         :           :                
@@ -151,7 +151,7 @@ GND*                         : 80        :        :                   :         
 GND*                         : 81        :        :                   :         : 4         :                
 GND*                         : 82        :        :                   :         : 4         :                
 VCCIO4                       : 83        : power  :                   : 3.3V    : 4         :                
-GND*                         : 84        :        :                   :         : 4         :                
+C_carry                      : 84        : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : 85        : gnd    :                   :         :           :                
 GND*                         : 86        :        :                   :         : 4         :                
 GND*                         : 87        :        :                   :         : 4         :                

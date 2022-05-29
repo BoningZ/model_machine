@@ -23,34 +23,6 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-reg8
-# storage
-db|final_design.(1).cnf
-db|final_design.(1).cnf
-# case_insensitive
-# source_file
-333|reg8.bdf
-16bb50848134ea16eecf6c7cb6d33626
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-reg8:SIG
-reg8_bus:PC|reg8:inst1
-reg8_bus:I_R|reg8:inst1
-reg8_bus:R0|reg8:inst1
-reg8_bus:R1|reg8:inst1
-reg8_bus:R2|reg8:inst1
-reg8_bus:R3|reg8:inst1
-reg8_bus:MDR|reg8:inst1
-reg8_bus:MAR|reg8:inst1
-}
-# macro_sequence
-
-# end
-# entity
 my_start
 # storage
 db|final_design.(2).cnf
@@ -65,7 +37,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-my_start:inst
+my_start:starter
 }
 # macro_sequence
 
@@ -85,72 +57,15 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-3_state_1_gate_bus:inst31
-3_state_1_gate_bus:inst60
-3_state_1_gate_bus:A
-3_state_1_gate_bus:inst62
-3_state_1_gate_bus:inst93
-3_state_1_gate_bus:inst94
-3_state_1_gate_bus:inst63
-3_state_1_gate_bus:inst64
-3_state_1_gate_bus:B
-3_state_1_gate_bus:inst23
-3_state_1_gate_bus:inst21
-}
-# macro_sequence
-
-# end
-# entity
-3_state_1_gate
-# storage
-db|final_design.(8).cnf
-db|final_design.(8).cnf
-# case_insensitive
-# source_file
-333|3_state_1_gate.bdf
-cac87441e95d7644eedf51993a1a427f
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-3_state_1_gate_bus:inst31|3_state_1_gate:inst
-3_state_1_gate_bus:inst60|3_state_1_gate:inst
-3_state_1_gate_bus:A|3_state_1_gate:inst
-3_state_1_gate_bus:inst62|3_state_1_gate:inst
-3_state_1_gate_bus:inst93|3_state_1_gate:inst
-3_state_1_gate_bus:inst94|3_state_1_gate:inst
-3_state_1_gate_bus:inst63|3_state_1_gate:inst
-3_state_1_gate_bus:inst64|3_state_1_gate:inst
-3_state_1_gate_bus:B|3_state_1_gate:inst
-3_state_1_gate_bus:inst23|3_state_1_gate:inst
-3_state_1_gate_bus:inst21|3_state_1_gate:inst
-}
-# macro_sequence
-
-# end
-# entity
-2-4
-# storage
-db|final_design.(9).cnf
-db|final_design.(9).cnf
-# case_insensitive
-# source_file
-333|2-4.bdf
-8380c740696865c1be3554887f8f9e97
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-2-4:selA
-2-4:inst6
-2-4:inst88
-2-4:selB
-2-4:inst48
-2-4:inst7
+reg8_EN_bus:PC|3_state_1_gate_bus:inst1
+reg_group_bus:reg_group|3_state_1_gate_bus:A
+reg_group_bus:reg_group|3_state_1_gate_bus:B
+zero2_bus:ZERO|3_state_1_gate_bus:inst
+zero2_bus:ZERO|3_state_1_gate_bus:inst1
+mdr_bus:MDR|3_state_1_gate_bus:inst3
+mdr_bus:MDR|3_state_1_gate_bus:inst93
+mdr_bus:MDR|3_state_1_gate_bus:inst94
+3_state_1_gate_bus:ONE_STEP
 }
 # macro_sequence
 
@@ -170,7 +85,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-3-8_bus:inst72
+3-8_bus:sel_nxt_uPC
+3-8_bus:sel_destination
 }
 # macro_sequence
 
@@ -190,8 +106,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-3-8_bus:inst72|3-8:inst
-3-8:inst78
+3-8_bus:sel_nxt_uPC|3-8:inst
+3-8_bus:sel_destination|3-8:inst
 }
 # macro_sequence
 
@@ -211,8 +127,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-selector4_bus:inst3
-selector4_bus:inst4
+reg_group_bus:reg_group|selector4_bus:inst3
+reg_group_bus:reg_group|selector4_bus:inst4
 }
 # macro_sequence
 
@@ -232,12 +148,12 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-selector4_bus:inst3|selector2_bus:inst2
-selector4_bus:inst3|selector2_bus:inst
-selector4_bus:inst3|selector2_bus:inst1
-selector4_bus:inst4|selector2_bus:inst2
-selector4_bus:inst4|selector2_bus:inst
-selector4_bus:inst4|selector2_bus:inst1
+reg_group_bus:reg_group|selector4_bus:inst3|selector2_bus:inst2
+reg_group_bus:reg_group|selector4_bus:inst3|selector2_bus:inst
+reg_group_bus:reg_group|selector4_bus:inst3|selector2_bus:inst1
+reg_group_bus:reg_group|selector4_bus:inst4|selector2_bus:inst2
+reg_group_bus:reg_group|selector4_bus:inst4|selector2_bus:inst
+reg_group_bus:reg_group|selector4_bus:inst4|selector2_bus:inst1
 }
 # macro_sequence
 
@@ -257,13 +173,13 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-selector4_bus:inst3|selector2_bus:inst2|selector2:inst
-selector4_bus:inst3|selector2_bus:inst|selector2:inst
-selector4_bus:inst3|selector2_bus:inst1|selector2:inst
-selector4_bus:inst4|selector2_bus:inst2|selector2:inst
-selector4_bus:inst4|selector2_bus:inst|selector2:inst
-selector4_bus:inst4|selector2_bus:inst1|selector2:inst
-selector_halfa:inst46|selector2:inst
+selector_halfa:JP/QJP|selector2:inst
+reg_group_bus:reg_group|selector4_bus:inst3|selector2_bus:inst2|selector2:inst
+reg_group_bus:reg_group|selector4_bus:inst3|selector2_bus:inst|selector2:inst
+reg_group_bus:reg_group|selector4_bus:inst3|selector2_bus:inst1|selector2:inst
+reg_group_bus:reg_group|selector4_bus:inst4|selector2_bus:inst2|selector2:inst
+reg_group_bus:reg_group|selector4_bus:inst4|selector2_bus:inst|selector2:inst
+reg_group_bus:reg_group|selector4_bus:inst4|selector2_bus:inst1|selector2:inst
 }
 # macro_sequence
 
@@ -283,7 +199,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-3_state_2_gate_bus:inst29
+mdr_bus:MDR|3_state_2_gate_bus:inst29
 }
 # macro_sequence
 
@@ -303,7 +219,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-3_state_2_gate_bus:inst29|3_state_2_gate:inst
+mdr_bus:MDR|3_state_2_gate_bus:inst29|3_state_2_gate:inst
 }
 # macro_sequence
 
@@ -363,7 +279,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-selector_halfa:inst46
+selector_halfa:JP/QJP
 }
 # macro_sequence
 
@@ -383,13 +299,13 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-reg8_bus:PC
 reg8_bus:I_R
-reg8_bus:R0
-reg8_bus:R1
-reg8_bus:R2
-reg8_bus:R3
-reg8_bus:MDR
+reg8_EN_bus:PC|reg8_bus:inst
+reg_group_bus:reg_group|reg8_bus:R0
+reg_group_bus:reg_group|reg8_bus:R1
+reg_group_bus:reg_group|reg8_bus:R2
+reg_group_bus:reg_group|reg8_bus:R3
+mdr_bus:MDR|reg8_bus:MDR
 reg8_bus:MAR
 }
 # macro_sequence
@@ -410,27 +326,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-alu_bus:inst8
-}
-# macro_sequence
-
-# end
-# entity
-alu
-# storage
-db|final_design.(4).cnf
-db|final_design.(4).cnf
-# case_insensitive
-# source_file
-333|alu.bdf
-69d3827aa9a95dda74b5dd6cde5e645
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-alu_bus:inst8|alu:inst
+alu_sta_bused:ALU|alu_bus:inst
 }
 # macro_sequence
 
@@ -450,8 +346,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-alu_bus:inst8|alu:inst|74181:inst
-alu_bus:inst8|alu:inst|74181:inst3
+alu_sta_bused:ALU|alu_bus:inst|alu:inst|74181:inst
+alu_sta_bused:ALU|alu_bus:inst|alu:inst|74181:inst3
 }
 # macro_sequence
 
@@ -471,7 +367,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-alu_bus:inst8|alu:inst|74182:inst2
+alu_sta_bused:ALU|alu_bus:inst|alu:inst|74182:inst2
 }
 # macro_sequence
 
@@ -491,8 +387,8 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-3-8_bus:inst72|3-8:inst|74138:inst
-3-8:inst78|74138:inst
+3-8_bus:sel_nxt_uPC|3-8:inst|74138:inst
+3-8_bus:sel_destination|3-8:inst|74138:inst
 }
 # macro_sequence
 
@@ -688,6 +584,207 @@ counter_bus:uPC|uPC:inst|74161:inst1
 
 # end
 # entity
+alu_sta_bused
+# storage
+db|final_design.(4).cnf
+db|final_design.(4).cnf
+# case_insensitive
+# source_file
+BUSed|alu_sta_bused.bdf
+e28a4fb2e68f9d5aeb53b1f1b6422ba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+alu_sta_bused:ALU
+}
+# macro_sequence
+
+# end
+# entity
+reg8_EN_bus
+# storage
+db|final_design.(26).cnf
+db|final_design.(26).cnf
+# case_insensitive
+# source_file
+BUSed|reg8_EN_bus.bdf
+98335b60331b14af47f6c15d2a6126e7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+reg8_EN_bus:PC
+}
+# macro_sequence
+
+# end
+# entity
+zero2_bus
+# storage
+db|final_design.(27).cnf
+db|final_design.(27).cnf
+# case_insensitive
+# source_file
+BUSed|zero2_bus.bdf
+1224655f78b6c3fa523d7dfe8c7076
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+zero2_bus:ZERO
+}
+# macro_sequence
+
+# end
+# entity
+reg_group_bus
+# storage
+db|final_design.(28).cnf
+db|final_design.(28).cnf
+# case_insensitive
+# source_file
+BUSed|reg_group_bus.bdf
+8ab2c10235676082596130507c9af1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+reg_group_bus:reg_group
+}
+# macro_sequence
+
+# end
+# entity
+reg8
+# storage
+db|final_design.(1).cnf
+db|final_design.(1).cnf
+# case_insensitive
+# source_file
+333|reg8.bdf
+1d73c118cfdc6b46f27a39ff9397186
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+reg8_bus:I_R|reg8:inst1
+alu_sta_bused:ALU|reg8:inst1
+reg8_EN_bus:PC|reg8_bus:inst|reg8:inst1
+reg_group_bus:reg_group|reg8_bus:R0|reg8:inst1
+reg_group_bus:reg_group|reg8_bus:R1|reg8:inst1
+reg_group_bus:reg_group|reg8_bus:R2|reg8:inst1
+reg_group_bus:reg_group|reg8_bus:R3|reg8:inst1
+mdr_bus:MDR|reg8_bus:MDR|reg8:inst1
+reg8_bus:MAR|reg8:inst1
+}
+# macro_sequence
+
+# end
+# entity
+alu
+# storage
+db|final_design.(8).cnf
+db|final_design.(8).cnf
+# case_insensitive
+# source_file
+333|alu.bdf
+f1dbd5b45843d271f634edff05e76b4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+alu_sta_bused:ALU|alu_bus:inst|alu:inst
+}
+# macro_sequence
+
+# end
+# entity
+3_state_1_gate
+# storage
+db|final_design.(9).cnf
+db|final_design.(9).cnf
+# case_insensitive
+# source_file
+333|3_state_1_gate.bdf
+f1de2a40fa2137845776d835a2fd83af
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+reg8_EN_bus:PC|3_state_1_gate_bus:inst1|3_state_1_gate:inst
+reg_group_bus:reg_group|3_state_1_gate_bus:A|3_state_1_gate:inst
+reg_group_bus:reg_group|3_state_1_gate_bus:B|3_state_1_gate:inst
+zero2_bus:ZERO|3_state_1_gate_bus:inst|3_state_1_gate:inst
+zero2_bus:ZERO|3_state_1_gate_bus:inst1|3_state_1_gate:inst
+mdr_bus:MDR|3_state_1_gate_bus:inst3|3_state_1_gate:inst
+mdr_bus:MDR|3_state_1_gate_bus:inst93|3_state_1_gate:inst
+mdr_bus:MDR|3_state_1_gate_bus:inst94|3_state_1_gate:inst
+3_state_1_gate_bus:ONE_STEP|3_state_1_gate:inst
+}
+# macro_sequence
+
+# end
+# entity
+2-4
+# storage
+db|final_design.(25).cnf
+db|final_design.(25).cnf
+# case_insensitive
+# source_file
+333|2-4.bdf
+1d3a8bf0248cedfe7f76aeb8ac89b0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+2-4:selA
+reg_group_bus:reg_group|2-4:inst6
+reg_group_bus:reg_group|2-4:inst88
+reg_group_bus:reg_group|2-4:inst7
+2-4:selB
+2-4:C/V/N/Z
+}
+# macro_sequence
+
+# end
+# entity
+mdr_bus
+# storage
+db|final_design.(29).cnf
+db|final_design.(29).cnf
+# case_insensitive
+# source_file
+BUSed|mdr_bus.bdf
+99d7e9ba479bd04b928152d364911770
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+mdr_bus:MDR
+}
+# macro_sequence
+
+# end
+# entity
 final_design
 # storage
 db|final_design.(0).cnf
@@ -695,7 +792,7 @@ db|final_design.(0).cnf
 # case_insensitive
 # source_file
 final_design.bdf
-43b115dc6858acd57594b213088931d
+6937793f85d887d1737b25cae956583
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

@@ -133,3 +133,8 @@ set_location_assignment PIN_151 -to XINHAO
 set_location_assignment PIN_152 -to XINHAO27
 set_location_assignment PIN_99 -to uIR_7_Carry
 set_global_assignment -name MISC_FILE "C:/Users/lenovo/Desktop/大二下/计组课设/计组课设/final_design/final_design.dpf"
+set_global_assignment -name BDF_FILE BUSed/reg_group_bus.bdf
+set_global_assignment -name BDF_FILE BUSed/mdr_bus.bdf
+set_global_assignment -name BDF_FILE BUSed/reg8_EN_bus.bdf
+set_global_assignment -name BDF_FILE BUSed/alu_sta_bused.bdf
+set_global_assignment -name BDF_FILE BUSed/zero2_bus.bdf
