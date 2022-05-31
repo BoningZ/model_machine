@@ -29,51 +29,51 @@ int main(){
 	while(cin>>stt){
 		char st[50];
 		int r,r1,r2,ad;
-		printf("%x,",s++);
-		printf("*%x",mp[stt]);
+		printf("%02X,",s++);
+		printf("%X",mp[stt]);
 		switch(mp[stt]){
 			case 1:
 				cin>>st;
 				sscanf(st,"R%d,%d",&r,&ad);
-				printf("%x\n%x,",r,s++);
-				printf("*%x%x\n",ad>>4,ad%16);
+				printf("%X\n%02X,",r,s++);
+				printf("%X%X\n",ad>>4,ad%16);
 				break;
 			case 2:
 				cin>>st;
 				sscanf(st,"R%d,%d",&r,&ad);
-				printf("%x\n%x,",r,s++);
-				printf("*%x%x\n",ad>>4,ad%16);
+				printf("%X\n%02X,",r,s++);
+				printf("%X%X\n",ad>>4,ad%16);
 				break;
 			case 3:puts("0");break;
 			case 4:
 				cin>>stt;
 				cin>>ad;
 				if(ad<0)ad+=256;
-				printf("%x\n%x,",mp[stt]<<2,s++);
-				printf("*%x%x\n",ad>>4,ad%16);
+				printf("%X\n%02X,",mp[stt]<<2,s++);
+				printf("%X%X\n",ad>>4,ad%16);
 				break;
 			case 5:
 				cin>>st;
 				sscanf(st,"R%d,R%d",&r1,&r2);
-				printf("%x\n",(r1<<2)+r2);
+				printf("%X\n",(r1<<2)+r2);
 				break;
 			case 6:
 				cin>>ad;
 				if(ad<0)ad+=256;
-				printf("0\n%x,",s++);
-				printf("*%x%x\n",ad>>4,ad%16);
+				printf("0\n%02X,",s++);
+				printf("%X%X\n",ad>>4,ad%16);
 				break;
 			case 7:
 				cin>>st;
 				sscanf(st,"R%d",&r);
-				printf("%x\n",r);
+				printf("%X\n",r);
 				break;
 			case 12:flag=2;break;
 			case 11:flag=1;break;
 			case 10:
 				cin>>st;
 				sscanf(st,"R%d",&r);
-				printf("%x\n",r);
+				printf("%X\n",r);
 				break;
 				
 		}
@@ -81,11 +81,11 @@ int main(){
 	}
 	int dat;
 	while(cin>>dat){
-		printf("%x,",s++);
+		printf("%02X,",s++);
 		if(flag==1){
 		if(dat>127||dat<-128){printf("OVERFLOW!\n");continue;}
 		if(dat<0)dat+=256;}
-		printf("*%x%x\n",dat>>4,dat%16);
+		printf("%X%X\n",dat>>4,dat%16);
 	}
 	return 0;
 }
